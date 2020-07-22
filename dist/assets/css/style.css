@@ -15,26 +15,56 @@ main {
   background-color: firebrick;
   width: 50%;
   margin: auto;
-  max-width: 700px; }
+  max-width: 700px;
+  max-height: 100%; }
   main form {
     text-align: center;
     width: 100%; }
     main form input {
       width: 95%;
-      height: 3rem;
+      height: 1.5rem;
       margin: 0;
-      -webkit-border-radius: 103px;
-      -moz-border-radius: 103px;
+      padding: 5px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
       border-radius: 50px;
       border-color: white;
       background-color: firebrick;
-      padding-left: 50px; }
+      font-size: 1rem; }
+    main form .login-btn {
+      width: 100%;
+      height: 1.5rem;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      border-radius: 50px;
+      color: red;
+      background-color: white;
+      font-weight: bold;
+      letter-spacing: 1px; }
     main form #terms {
       width: auto;
-      height: auto; }
+      height: auto;
+      color: white; }
 
 #form > input::placeholder {
   color: white; }
+
+#form > input,
+select,
+textarea {
+  color: white;
+  outline: none; }
+
+/* Changing AutoFill Background Color and Text Color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px firebrick inset;
+  color: white; }
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: white !important; }
 
 header {
   text-align: left; }
@@ -44,4 +74,15 @@ header {
     margin-top: -10px; }
 
 footer img {
-  width: 5vh; }
+  width: 7vh; }
+
+footer .divider {
+  margin-top: 20px;
+  display: flex; }
+  footer .divider hr {
+    width: 40%; }
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px; }
