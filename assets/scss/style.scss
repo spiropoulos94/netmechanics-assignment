@@ -1,28 +1,52 @@
-$skyColor: red;
+$pageColor: firebrick;
 
 body {
-  background-color: firebrick;
+  background-color: $pageColor;
+  margin: 0px;
 }
 
 #banner {
   display: none;
 }
 
+#landing {
+  header {
+    color: white;
+    letter-spacing: 2px;
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}
+
 main {
-  background-color: firebrick;
-  width: 70%;
+  background-color: $pageColor;
+  width: 50%;
   margin: auto;
   max-width: 700px;
   form {
     text-align: center;
     width: 100%;
-    background-color: blue;
+
     input {
-      width: 100%;
-      height: 2rem;
+      width: 95%;
+      height: 3rem;
       margin: 0;
+      -webkit-border-radius: 103px;
+      -moz-border-radius: 103px;
+      border-radius: 50px;
+      border-color: white;
+      background-color: $pageColor;
+      padding-left: 50px;
+    }
+    #terms {
+      width: auto;
+      height: auto;
     }
   }
+}
+#form > input::placeholder {
+  color: white;
 }
 
 header {
