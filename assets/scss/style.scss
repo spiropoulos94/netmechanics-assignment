@@ -4,6 +4,39 @@ body {
   background-color: firebrick;
 }
 
-h1 {
-  font-size: 1rem;
+#banner {
+  display: none;
+}
+
+main {
+  background-color: firebrick;
+  width: 70%;
+  margin: auto;
+  max-width: 700px;
+  form {
+    text-align: center;
+    width: 100%;
+    background-color: blue;
+    input {
+      width: 100%;
+      height: 2rem;
+      margin: 0;
+    }
+  }
+}
+
+header {
+  text-align: left;
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    margin-top: -10px;
+  }
+}
+
+footer {
+  img {
+    width: 5vh;
+  }
 }

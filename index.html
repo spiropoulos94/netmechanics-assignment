@@ -7,23 +7,39 @@
     <link rel="stylesheet" href="./dist/assets/css/style.css"></link>
   </head>
   <body>
-    <main>
-      <section id="image"></section>
+    <main id="main">
+      <section id="banner">
+        <img id="landing_image" src="./dist/assets/images/landing_image.jpg">
+        <H1>Hello world</H1>
+      </section>
       <section id="landing">
-        <h1>Register</h1>
-        <p>Do you have an account? Create your account, it takes less than a minute.</p>
-        <form>
-          <label for="fname">Name</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="fname">E-mail</label><br>
-            <input type="email" id="fname" name="fname"><br>
-            <label for="fname">Phone Number</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="fname">Password</label><br>
-            <input type="password" id="fname" name="fname"><br>
-            <button>Login</button>
+        <header>
+          <h1>Register</h1>
+          <p>Do you have an account? Create your account, it takes less than a minute.</p>
+      </header>
+        <form id="form">
+          <label for="name">Name</label><br>
+            <input type="text" id="name" name="name"><br>
+          <label for="email">E-mail</label><br>
+            <input type="email" id="email" name="email"><br>
+          <label for="phone">Phone Number</label><br>
+            <input type="phone" id="phone" name="phone"><br>
+          <label for="password">Password</label><br>
+            <input type="password" id="password" name="password"><br>
+          <label for="terms"> </label><br>
+          <input type="checkbox" id="vehicle3" name="terms" value="Boat">I accept terms and Conditions & Privacy Policy</input><br>
+          <br>
+            <button class="login-btn">Login</button>
         </form>
       </section>
+      <footer>
+        <div class="divider"><hr><span>Or</span><hr></div>
+        <div class="social-links">
+          <img src="dist/assets/favicons/facebook.png">
+          <img src="dist/assets/favicons/twitter.png">
+          <img src="dist/assets/favicons/google-plus.png">
+        </div>
+      </footer>
     </main>
   </body>
 </html>
