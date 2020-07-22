@@ -1,0 +1,25 @@
+{
+  "name": "netmechanics-assignment",
+  "version": "1.0.0",
+  "description": "Register Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spiropoulos94/netmechanics-assignment.git"
+  },
+  "author": "Nikos Spiropoulos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spiropoulos94/netmechanics-assignment/issues"
+  },
+  "homepage": "https://github.com/spiropoulos94/netmechanics-assignment#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.10",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0"
+  }
+}
