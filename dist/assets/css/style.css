@@ -2,6 +2,13 @@ body {
   background-color: firebrick;
   margin: 0px; }
 
+header {
+  text-align: left; }
+  header h1 {
+    font-size: 2em; }
+  header p {
+    margin-top: -10px; }
+
 #banner {
   display: none; }
 
@@ -20,7 +27,8 @@ main {
   main form {
     text-align: center;
     width: 100%; }
-    main form input {
+    main form input,
+    main form button {
       width: 95%;
       height: 1.9rem;
       margin: 0;
@@ -41,7 +49,8 @@ main {
       font-weight: bold;
       letter-spacing: 1px;
       padding: 5px;
-      font-size: 1rem; }
+      font-size: 1rem;
+      height: 44.4px; }
     main form #terms {
       width: auto;
       height: auto;
@@ -77,13 +86,6 @@ input:-webkit-autofill:active {
 
 input:-webkit-autofill {
   -webkit-text-fill-color: white !important; }
-
-header {
-  text-align: left; }
-  header h1 {
-    font-size: 2em; }
-  header p {
-    margin-top: -10px; }
 
 footer img {
   width: 7vh; }
