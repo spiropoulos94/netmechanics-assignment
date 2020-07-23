@@ -40,9 +40,10 @@ main {
     main form input,
     main form button {
       width: 95%;
-      height: 1.9rem;
+      height: 5vh;
       margin: 0;
       padding: 5px;
+      margin-top: 1.5vh;
       -webkit-border-radius: 50px;
       -moz-border-radius: 50px;
       border-radius: 50px;
@@ -101,7 +102,7 @@ input:-webkit-autofill {
   -webkit-text-fill-color: white !important; }
 
 footer img {
-  width: 7vh; }
+  width: 4vh; }
 
 footer .divider {
   margin-top: 20px;
@@ -111,20 +112,51 @@ footer .divider {
 
 .social-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 10px; }
+  .social-links img {
+    width: 35px; }
+
+#login-social-msg {
+  display: none; }
 
 @media only screen and (min-width: 992px) {
   body {
     background-color: white; }
+  #page {
+    background-color: orange;
+    display: flex;
+    justify-content: center; }
   main {
-    background-color: green;
-    width: 70vw;
+    width: 60vw;
     max-width: none;
-    height: 100%;
+    height: 40vw;
     display: flex;
     flex-direction: row;
     margin: 10em; }
+    main form {
+      text-align: center;
+      margin: auto;
+      width: 80%;
+      display: flex;
+      flex-direction: column; }
+      main form input,
+      main form .login-btn {
+        height: 1.5vh;
+        margin-top: 0vh;
+        font-size: 1rem; }
+      main form #login-container {
+        display: flex;
+        justify-content: end; }
+      main form .login-btn {
+        display: block;
+        text-align: center;
+        width: 35%;
+        height: 5vh;
+        background-color: red;
+        color: white;
+        font-size: 1rem;
+        position: relative; }
   #banner {
     display: block;
     position: relative;
@@ -133,17 +165,53 @@ footer .divider {
     width: 50%; }
     #banner .banner_text {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-80%, -80%); }
+      top: 40%;
+      left: 40%;
+      transform: translate(-60%, -80%); }
       #banner .banner_text h1 {
         font-size: 5rem; }
       #banner .banner_text p {
-        font-size: 1rem; }
+        font-size: 1rem;
+        position: relative;
+        top: -50px; }
     #banner img {
       width: 100%;
-      height: 100vh; }
+      height: 100%; }
   #landing {
     width: 50%;
-    padding-left: 2rem;
-    padding-right: 2rem; } }
+    background-color: white;
+    height: 100%; }
+    #landing form {
+      position: relative;
+      top: -2em; }
+    #landing header {
+      color: black;
+      letter-spacing: 2px;
+      width: 80%;
+      display: block;
+      margin: auto;
+      position: relative;
+      top: -10px; }
+      #landing header h1 {
+        font-size: 2rem; }
+      #landing header p {
+        font-size: 1rem; }
+  #terms_container {
+    color: black;
+    font-size: 14px;
+    display: flex;
+    justify-content: start;
+    position: relative;
+    top: 0.3rem; }
+  footer .divider {
+    display: none; }
+  .msg-icons {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8%; }
+    .msg-icons span {
+      position: relative;
+      left: 12%; }
+  #login-social-msg {
+    display: inline; } }

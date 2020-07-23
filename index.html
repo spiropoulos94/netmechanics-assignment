@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="./dist/assets/css/style.css"></link>
   </head>
   <body>
+    <div id="page">
     <main id="main">
       <section id="banner">
         <img id="landing_image" src="./dist/assets/images/landing_image.jpg">
         <div class="banner_text">
-          <H1>Hello world.</H1>
+          <H1>Hello World.</H1>
           <p>Lorem Ipsum dolor sit amet</p>
         </div>
       </section>
@@ -21,30 +22,31 @@
           <p>Do you have an account? Create your account, it takes less than a minute.</p>
       </header>
         <form id="form">
-          <label for="name"></label><br>
             <input type="text" placeholder="Name" id="name" name="name"><br>
-          <label for="email"></label><br>
             <input type="email" placeholder="E-mail ID" id="email" name="email"><br>
-          <label for="phone"></label><br>
             <input type="phone" placeholder="Phone Number" id="phone" name="phone"><br>
-          <label for="password"></label><br>
             <input type="password" placeholder="Password" id="password" name="password"><br>
           <div id="terms_container">
-          <label for="terms"></label><br>
           <input type="checkbox" id="terms" name="terms" style="color:white">I accept terms and Conditions & Privacy Policy</input><br>
         </div><br>
+        <div id="login-container">
             <button class="login-btn">LOGIN</button>
+          </div>
         </form>
         <footer>
           <div class="divider"><hr><span>Or</span><hr></div>
+          <div class="msg-icons">
+            <span id="login-social-msg">Log in with social media.</span>
           <div class="social-links">
-            <a href="#" target="_blank"><img src="dist/assets/favicons/facebook.png"></a>
-            <a href="#" target="_blank"><img src="dist/assets/favicons/twitter.png"></a>
-            <a href="#" target="_blank"><img src="dist/assets/favicons/google-plus.png"></a>
+            <a href="#" target="_blank"><button class="social-btn"><img src="dist/assets/favicons/facebook.png"></button></a>
+            <a href="#" target="_blank"><button class="social-btn"><img src="dist/assets/favicons/twitter.png"></button></a>
+            <a href="#" target="_blank"><button class="social-btn"><img src="dist/assets/favicons/google-plus.png"></button></a>
           </div>
+        </div>
         </footer>
       </section>
       
     </main>
+  </div>
   </body>
 </html>

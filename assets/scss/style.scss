@@ -1,5 +1,5 @@
 $pageColor: firebrick;
-$inputSize: 1.9rem;
+$inputSize: 5vh;
 
 body {
   background-color: $pageColor;
@@ -27,6 +27,10 @@ header {
 }
 
 #landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   header {
     color: white;
     letter-spacing: 2px;
@@ -35,10 +39,6 @@ header {
       font-size: 0.8rem;
     }
   }
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 
 main {
@@ -58,6 +58,7 @@ main {
       height: $inputSize;
       margin: 0;
       padding: 5px;
+      margin-top: 1.5vh;
       -webkit-border-radius: 50px;
       -moz-border-radius: 50px;
       border-radius: 50px;
@@ -128,7 +129,7 @@ input:-webkit-autofill {
 
 footer {
   img {
-    width: 7vh;
+    width: 4vh;
   }
 }
 
@@ -142,8 +143,15 @@ footer .divider {
 
 .social-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 10px;
+  img {
+    width: 35px;
+  }
+}
+
+#login-social-msg {
+  display: none;
 }
 
 // try to move the input cursor towards the middle while typing in an input
@@ -153,14 +161,49 @@ footer .divider {
     background-color: white;
   }
 
+  #page {
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+  }
+
   main {
-    background-color: green;
-    width: 70vw;
+    width: 60vw;
     max-width: none;
-    height: 100%;
+    height: 40vw;
     display: flex;
     flex-direction: row;
     margin: 10em;
+
+    form {
+      text-align: center;
+      margin: auto;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      input,
+      .login-btn {
+        height: 1.5vh;
+        margin-top: 0vh;
+        font-size: 1rem;
+      }
+
+      #login-container {
+        display: flex;
+        justify-content: end;
+      }
+
+      .login-btn {
+        display: block;
+        text-align: center;
+        width: 35%;
+        height: 5vh;
+        background-color: red;
+        color: white;
+        font-size: 1rem;
+        position: relative;
+      }
+    }
   }
 
   #banner {
@@ -171,26 +214,75 @@ footer .divider {
     width: 50%;
     .banner_text {
       position: absolute;
-
-      top: 50%;
-      left: 50%;
-      transform: translate(-80%, -80%);
+      top: 40%;
+      left: 40%;
+      transform: translate(-60%, -80%);
       h1 {
         font-size: 5rem;
       }
       p {
         font-size: 1rem;
+        position: relative;
+        top: -50px;
       }
     }
     img {
       width: 100%;
-      height: 100vh;
+      height: 100%;
     }
   }
 
   #landing {
     width: 50%;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    background-color: white;
+    height: 100%;
+
+    form {
+      position: relative;
+      top: -2em;
+    }
+
+    header {
+      color: black;
+      letter-spacing: 2px;
+      width: 80%;
+      display: block;
+      margin: auto;
+      position: relative;
+      top: -10px;
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  #terms_container {
+    color: black;
+    font-size: 14px;
+    display: flex;
+    justify-content: start;
+    position: relative;
+    top: 0.3rem;
+  }
+
+  footer .divider {
+    display: none;
+  }
+  .msg-icons {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8%;
+    span {
+      position: relative;
+      left: 12%;
+    }
+  }
+
+  #login-social-msg {
+    display: inline;
   }
 }
