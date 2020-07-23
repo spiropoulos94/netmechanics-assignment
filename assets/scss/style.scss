@@ -106,6 +106,7 @@ main {
 
 //removing outline when input is on focus
 #form > input,
+button,
 select,
 textarea {
   color: white;
@@ -144,3 +145,5 @@ footer .divider {
   justify-content: space-between;
   padding-top: 10px;
 }
+
+// try to move the input cursor towards the middle while typing in an input
