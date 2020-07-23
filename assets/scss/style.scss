@@ -43,9 +43,9 @@ header {
 
 main {
   background-color: $pageColor;
-  width: 80%;
+  width: 50%;
   margin: auto;
-  max-width: 400px;
+  max-width: 500px;
   max-height: 100%;
   display: flex;
   form {
@@ -78,8 +78,6 @@ main {
       padding: 5px;
       font-size: 1rem;
       height: 44.4px;
-      position: relative;
-      top: 2.5rem;
     }
     #terms {
       width: auto;
@@ -95,9 +93,8 @@ main {
 #terms_container {
   color: white;
   font-size: 10px;
-  display: flex;
-  justify-content: center;
   position: relative;
+  left: 2px;
   top: 0.5rem;
 }
 
@@ -140,6 +137,9 @@ footer .divider {
     width: 40%;
   }
 }
+.social-btn {
+  border-radius: 80%;
+}
 
 .social-links {
   display: flex;
@@ -165,6 +165,7 @@ footer .divider {
     background-color: orange;
     display: flex;
     justify-content: center;
+    height: 100vh;
   }
 
   main {
@@ -173,7 +174,6 @@ footer .divider {
     height: 40vw;
     display: flex;
     flex-direction: row;
-    margin: 10em;
 
     form {
       text-align: center;
@@ -218,7 +218,7 @@ footer .divider {
       left: 40%;
       transform: translate(-60%, -80%);
       h1 {
-        font-size: 5rem;
+        font-size: 4.5rem;
       }
       p {
         font-size: 1rem;
@@ -239,7 +239,7 @@ footer .divider {
 
     form {
       position: relative;
-      top: -2em;
+      top: -1em;
     }
 
     header {
@@ -286,3 +286,5 @@ footer .divider {
     display: inline;
   }
 }
+
+//gia ipad pro allakse mono to height to main se 60vh
