@@ -1,5 +1,5 @@
 $pageColor: firebrick;
-$inputSize: 1.5rem;
+$inputSize: 1.9rem;
 
 body {
   background-color: $pageColor;
@@ -24,7 +24,7 @@ main {
   background-color: $pageColor;
   width: 50%;
   margin: auto;
-  max-width: 700px;
+  max-width: 300px;
   max-height: 100%;
   form {
     text-align: center;
@@ -44,7 +44,6 @@ main {
     }
     .login-btn {
       width: 100%;
-      height: $inputSize;
       -webkit-border-radius: 50px;
       -moz-border-radius: 50px;
       border-radius: 50px;
@@ -52,6 +51,8 @@ main {
       background-color: white;
       font-weight: bold;
       letter-spacing: 1px;
+      padding: 5px;
+      font-size: 1rem;
     }
     #terms {
       width: auto;
@@ -64,6 +65,7 @@ main {
   color: white;
 }
 
+//removing outline when input is on focus
 #form > input,
 select,
 textarea {
