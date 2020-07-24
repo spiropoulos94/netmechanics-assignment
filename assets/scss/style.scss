@@ -168,17 +168,10 @@ footer .divider {
     height: 100vh;
   }
 
-  #landing {
-    header {
-      p {
-      }
-    }
-  }
-
   main {
-    width: 80vw;
+    width: 75vw;
     max-width: none;
-    height: 80vh;
+    height: 75vh;
     display: flex;
     flex-direction: row;
 
@@ -202,7 +195,7 @@ footer .divider {
 
       #login-container {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
       }
 
       .login-btn {
@@ -305,7 +298,7 @@ footer .divider {
     color: black;
     font-size: 14px;
     display: flex;
-    justify-content: start;
+    justify-content: space-around;
     position: relative;
     top: 0.3rem;
   }

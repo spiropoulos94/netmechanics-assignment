@@ -129,9 +129,9 @@ footer .divider {
     justify-content: center;
     height: 100vh; }
   main {
-    width: 80vw;
+    width: 75vw;
     max-width: none;
-    height: 80vh;
+    height: 75vh;
     display: flex;
     flex-direction: row; }
     main form {
@@ -150,7 +150,7 @@ footer .divider {
         font-size: 15px !important; }
       main form #login-container {
         display: flex;
-        justify-content: end; }
+        justify-content: flex-end; }
       main form .login-btn {
         display: block;
         text-align: center;
@@ -222,7 +222,7 @@ footer .divider {
     color: black;
     font-size: 14px;
     display: flex;
-    justify-content: start;
+    justify-content: space-around;
     position: relative;
     top: 0.3rem; }
   footer .divider {
