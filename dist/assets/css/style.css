@@ -196,7 +196,9 @@ footer .divider {
       left: 35%;
       transform: translate(-50%, -50%); }
       #banner .banner_text h1 {
-        font-size: 5rem; }
+        font-size: 5rem;
+        margin-top: 0px;
+        margin-bottom: 0px; }
       #banner .banner_text p {
         font-size: 1rem;
         position: relative;
