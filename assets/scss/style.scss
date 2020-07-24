@@ -43,7 +43,7 @@ header {
 
 main {
   background-color: $pageColor;
-  width: 50%;
+  width: 65%;
   margin: auto;
   max-width: 500px;
   max-height: 100%;
@@ -156,6 +156,12 @@ footer .divider {
 
 // try to move the input cursor towards the middle while typing in an input
 
+//@media only screen and (min-width: 1025) {
+//  main {
+//    width: 510vh;
+//  }
+//}
+
 @media only screen and (min-width: 992px) {
   body {
     background-color: white;
@@ -171,7 +177,7 @@ footer .divider {
   main {
     width: 60vw;
     max-width: none;
-    height: 60vw;
+    height: 70vh;
     display: flex;
     flex-direction: row;
 
@@ -214,16 +220,16 @@ footer .divider {
     width: 50%;
     .banner_text {
       position: absolute;
-      top: 40%;
-      left: 40%;
-      transform: translate(-60%, -80%);
+      top: 30%;
+      left: 35%;
+      transform: translate(-50%, -50%);
       h1 {
-        font-size: 4.5rem;
+        font-size: 3.5rem;
       }
       p {
         font-size: 1rem;
         position: relative;
-        top: -50px;
+        top: -10px;
       }
     }
     img {
