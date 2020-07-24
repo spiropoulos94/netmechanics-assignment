@@ -131,7 +131,7 @@ footer .divider {
   main {
     width: 60vw;
     max-width: none;
-    height: 40vw;
+    height: 60vw;
     display: flex;
     flex-direction: row; }
     main form {
