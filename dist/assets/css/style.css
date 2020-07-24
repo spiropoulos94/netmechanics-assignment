@@ -24,6 +24,9 @@ header {
   #landing header {
     color: white;
     letter-spacing: 2px; }
+    #landing header #register-link {
+      text-decoration: none;
+      color: white; }
     #landing header p {
       font-size: 0.8rem; }
 
@@ -128,6 +131,9 @@ footer .divider {
     display: flex;
     justify-content: center;
     height: 100vh; }
+  #register-link {
+    text-decoration: none;
+    color: blue !important; }
   main {
     width: 75vw;
     max-width: none;
@@ -222,9 +228,10 @@ footer .divider {
     color: black;
     font-size: 14px;
     display: flex;
-    justify-content: space-around;
-    position: relative;
-    top: 0.3rem; }
+    justify-content: start;
+    position: relative; }
+    #terms_container input {
+      margin-right: 3%; }
   footer .divider {
     display: none; }
   .msg-icons {

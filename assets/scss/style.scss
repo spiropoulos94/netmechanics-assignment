@@ -35,6 +35,11 @@ header {
     color: white;
     letter-spacing: 2px;
 
+    #register-link {
+      text-decoration: none;
+      color: white;
+    }
+
     p {
       font-size: 0.8rem;
     }
@@ -168,6 +173,11 @@ footer .divider {
     height: 100vh;
   }
 
+  #register-link {
+    text-decoration: none;
+    color: blue !important;
+  }
+
   main {
     width: 75vw;
     max-width: none;
@@ -298,9 +308,11 @@ footer .divider {
     color: black;
     font-size: 14px;
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     position: relative;
-    top: 0.3rem;
+    input {
+      margin-right: 3%;
+    }
   }
 
   footer .divider {
