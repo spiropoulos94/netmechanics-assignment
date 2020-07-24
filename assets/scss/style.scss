@@ -168,6 +168,13 @@ footer .divider {
     height: 100vh;
   }
 
+  #landing {
+    header {
+      p {
+      }
+    }
+  }
+
   main {
     width: 80vw;
     max-width: none;
@@ -186,6 +193,11 @@ footer .divider {
         height: 1.5vh;
         margin-top: 0vh;
         font-size: 1rem;
+      }
+
+      .login-btn {
+        height: 30px !important;
+        font-size: 15px !important;
       }
 
       #login-container {
@@ -215,6 +227,23 @@ footer .divider {
     }
   }
 
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+    color: black;
+  }
+  #form {
+    input::placeholder {
+      color: black;
+    }
+  }
+
+  input:-webkit-autofill {
+    -webkit-text-fill-color: black !important;
+  }
+
   #banner {
     display: block;
     position: relative;
@@ -222,12 +251,15 @@ footer .divider {
     color: white;
     width: 50%;
     .banner_text {
+      text-align: left !important;
+      height: fit-content;
+
       position: absolute;
       top: 30%;
       left: 35%;
       transform: translate(-50%, -50%);
       h1 {
-        font-size: 3.5rem;
+        font-size: 5rem;
       }
       p {
         font-size: 1rem;
@@ -263,7 +295,8 @@ footer .divider {
         font-size: 2rem;
       }
       p {
-        font-size: 1rem;
+        font-size: 1vw;
+        width: 60%;
       }
     }
   }
@@ -292,7 +325,8 @@ footer .divider {
   }
 
   #login-social-msg {
-    display: inline;
+    display: flex;
+    left: 10%;
   }
 }
 

@@ -145,6 +145,9 @@ footer .divider {
         height: 1.5vh;
         margin-top: 0vh;
         font-size: 1rem; }
+      main form .login-btn {
+        height: 30px !important;
+        font-size: 15px !important; }
       main form #login-container {
         display: flex;
         justify-content: end; }
@@ -163,6 +166,16 @@ footer .divider {
         outline: 0;
         border-width: 0 0 1px;
         border-color: black; }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+    color: black; }
+  #form input::placeholder {
+    color: black; }
+  input:-webkit-autofill {
+    -webkit-text-fill-color: black !important; }
   #banner {
     display: block;
     position: relative;
@@ -170,12 +183,14 @@ footer .divider {
     color: white;
     width: 50%; }
     #banner .banner_text {
+      text-align: left !important;
+      height: fit-content;
       position: absolute;
       top: 30%;
       left: 35%;
       transform: translate(-50%, -50%); }
       #banner .banner_text h1 {
-        font-size: 3.5rem; }
+        font-size: 5rem; }
       #banner .banner_text p {
         font-size: 1rem;
         position: relative;
@@ -201,7 +216,8 @@ footer .divider {
       #landing header h1 {
         font-size: 2rem; }
       #landing header p {
-        font-size: 1rem; }
+        font-size: 1vw;
+        width: 60%; }
   #terms_container {
     color: black;
     font-size: 14px;
@@ -220,4 +236,5 @@ footer .divider {
       position: relative;
       left: 12%; }
   #login-social-msg {
-    display: inline; } }
+    display: flex;
+    left: 10%; } }
