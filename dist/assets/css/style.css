@@ -13,7 +13,7 @@ header {
 
 #banner {
   display: none; }
-  #banner img {
+  #banner #landing_image {
     width: 100%; }
 
 #landing {
@@ -31,7 +31,6 @@ header {
       font-size: 0.8rem; }
 
 main {
-  background-color: firebrick;
   width: 65%;
   margin: auto;
   max-width: 500px;
@@ -41,7 +40,7 @@ main {
     text-align: center;
     width: 100%; }
     main form input,
-    main form button {
+    main form .login-btn {
       width: 95%;
       height: 5vh;
       margin: 0;
@@ -153,11 +152,7 @@ footer .divider {
         font-size: 1rem; }
       main form .login-btn {
         height: 30px !important;
-        font-size: 15px !important; }
-      main form #login-container {
-        display: flex;
-        justify-content: flex-end; }
-      main form .login-btn {
+        font-size: 15px !important;
         display: block;
         text-align: center;
         width: 35%;
@@ -172,6 +167,9 @@ footer .divider {
         outline: 0;
         border-width: 0 0 1px;
         border-color: black; }
+  .login-container {
+    display: flex;
+    justify-content: flex-end; }
   input:-webkit-autofill,
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus,
@@ -221,7 +219,7 @@ footer .divider {
       margin: auto;
       position: relative;
       top: -10px; }
-      #landing header h1 {
+      #landing header h2 {
         font-size: 2rem; }
       #landing header p {
         font-size: 1vw;

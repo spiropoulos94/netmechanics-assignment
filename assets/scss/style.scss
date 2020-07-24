@@ -21,7 +21,7 @@ header {
 
 #banner {
   display: none;
-  img {
+  #landing_image {
     width: 100%;
   }
 }
@@ -47,7 +47,7 @@ header {
 }
 
 main {
-  background-color: $pageColor;
+  //background-color: $pageColor;
   width: 65%;
   margin: auto;
   max-width: 500px;
@@ -58,7 +58,7 @@ main {
     width: 100%;
 
     input,
-    button {
+    .login-btn {
       width: 95%;
       height: $inputSize;
       margin: 0;
@@ -201,14 +201,6 @@ footer .divider {
       .login-btn {
         height: 30px !important;
         font-size: 15px !important;
-      }
-
-      #login-container {
-        display: flex;
-        justify-content: flex-end;
-      }
-
-      .login-btn {
         display: block;
         text-align: center;
         width: 35%;
@@ -228,6 +220,11 @@ footer .divider {
         border-color: black;
       }
     }
+  }
+
+  .login-container {
+    display: flex;
+    justify-content: flex-end;
   }
 
   input:-webkit-autofill,
@@ -296,7 +293,7 @@ footer .divider {
       margin: auto;
       position: relative;
       top: -10px;
-      h1 {
+      h2 {
         font-size: 2rem;
       }
       p {
