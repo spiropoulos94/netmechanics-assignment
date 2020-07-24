@@ -156,12 +156,6 @@ footer .divider {
 
 // try to move the input cursor towards the middle while typing in an input
 
-//@media only screen and (min-width: 1025) {
-//  main {
-//    width: 510vh;
-//  }
-//}
-
 @media only screen and (min-width: 992px) {
   body {
     background-color: white;
@@ -177,7 +171,7 @@ footer .divider {
   main {
     width: 60vw;
     max-width: none;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     flex-direction: row;
 
