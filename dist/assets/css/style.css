@@ -217,8 +217,7 @@ footer .divider {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px; }
     #landing form {
-      position: relative;
-      top: -1em; }
+      position: relative; }
     #landing header {
       color: black;
       letter-spacing: 2px;
