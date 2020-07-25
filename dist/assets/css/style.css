@@ -250,6 +250,9 @@ footer .divider {
     .msg-icons span {
       position: relative;
       left: 12%; }
+  .social-links {
+    position: relative;
+    top: 10px; }
   #login-social-msg {
     display: flex;
     left: 10%; } }
