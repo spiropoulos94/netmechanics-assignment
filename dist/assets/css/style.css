@@ -63,7 +63,9 @@ main {
       letter-spacing: 1px;
       padding: 5px;
       font-size: 1rem;
-      height: 44.4px; }
+      height: 44.4px;
+      position: relative;
+      top: 4vh; }
     main form #terms {
       width: auto;
       height: auto;
