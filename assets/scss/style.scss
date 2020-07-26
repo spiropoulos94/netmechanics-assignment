@@ -167,10 +167,17 @@ footer .divider {
   }
 
   #page {
-    background-color: orange;
     display: flex;
     justify-content: center;
     height: 100vh;
+    background-image: linear-gradient(
+      to right bottom,
+      #f2c42f,
+      #ffa034,
+      #ff7b49,
+      #ff5861,
+      #ea3c7b
+    );
   }
 
   #register-link {
