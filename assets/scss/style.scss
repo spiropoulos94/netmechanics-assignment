@@ -153,12 +153,23 @@ footer .divider {
   justify-content: space-around;
   padding-top: 10px;
   img {
-    width: 35px;
+    width: 30px;
   }
 }
 
 #login-social-msg {
   display: none;
+}
+
+.btn_txt {
+  display: none;
+}
+
+.social-links {
+  button {
+    background-color: transparent;
+    border: 0px;
+  }
 }
 
 // try to move the input cursor towards the middle while typing in an input
@@ -351,6 +362,40 @@ footer .divider {
     display: flex;
     left: 10%;
   }
-}
 
-//gia ipad pro allakse mono to height to main se 60vh
+  .btn_txt {
+    display: inline;
+    color: white;
+    font-size: 0.5rem;
+  }
+
+  .social-links {
+    button {
+      background-color: transparent;
+      border: 0px;
+      display: flex;
+      align-items: center;
+      border-radius: 30px;
+      width: 90px;
+      img {
+        width: 20px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  #fb {
+    background-color: #4267b2;
+  }
+
+  #tw {
+    background-color: #1da1f2;
+  }
+
+  #gp {
+    background-color: #dd4b39;
+  }
+}

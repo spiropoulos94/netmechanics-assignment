@@ -119,10 +119,17 @@ footer .divider {
   justify-content: space-around;
   padding-top: 10px; }
   .social-links img {
-    width: 35px; }
+    width: 30px; }
 
 #login-social-msg {
   display: none; }
+
+.btn_txt {
+  display: none; }
+
+.social-links button {
+  background-color: transparent;
+  border: 0px; }
 
 @media only screen and (min-width: 992px) {
   body {
@@ -256,4 +263,25 @@ footer .divider {
     top: 10px; }
   #login-social-msg {
     display: flex;
-    left: 10%; } }
+    left: 10%; }
+  .btn_txt {
+    display: inline;
+    color: white;
+    font-size: 0.5rem; }
+  .social-links button {
+    background-color: transparent;
+    border: 0px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    width: 90px; }
+    .social-links button img {
+      width: 20px; }
+  .social-links a {
+    text-decoration: none; }
+  #fb {
+    background-color: #4267b2; }
+  #tw {
+    background-color: #1da1f2; }
+  #gp {
+    background-color: #dd4b39; } }
