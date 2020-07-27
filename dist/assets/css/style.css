@@ -124,6 +124,9 @@ footer .divider {
 #login-social-msg {
   display: none; }
 
+.login-btn:hover {
+  cursor: pointer; }
+
 .btn_txt {
   display: none; }
 
@@ -170,7 +173,8 @@ footer .divider {
         background-color: red;
         color: white;
         font-size: 10px;
-        position: relative; }
+        position: relative;
+        z-index: 2; }
   #form > input,
   button,
   select,
@@ -267,7 +271,8 @@ footer .divider {
     top: 10px; }
   #login-social-msg {
     display: flex;
-    left: 10%; }
+    left: 10%;
+    z-index: 1; }
   .btn_txt {
     display: inline;
     color: white;
