@@ -47,7 +47,6 @@ header {
 }
 
 main {
-  //background-color: $pageColor;
   width: 65%;
   margin: auto;
   max-width: 500px;
@@ -171,8 +170,6 @@ footer .divider {
     border: 0px;
   }
 }
-
-// try to move the input cursor towards the middle while typing in an input
 
 @media only screen and (min-width: 992px) {
   body {
@@ -391,6 +388,10 @@ footer .divider {
     a {
       text-decoration: none;
     }
+
+    button:hover {
+      cursor: pointer;
+    }
   }
 
   #fb {
@@ -405,5 +406,3 @@ footer .divider {
     background-color: #dd4b39;
   }
 }
-
-//ftiakse to input

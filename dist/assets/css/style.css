@@ -283,6 +283,8 @@ footer .divider {
       width: 20px; }
   .social-links a {
     text-decoration: none; }
+  .social-links button:hover {
+    cursor: pointer; }
   #fb {
     background-color: #4267b2; }
   #tw {
