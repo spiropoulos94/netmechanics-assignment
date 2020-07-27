@@ -193,9 +193,8 @@ footer .divider {
     );
   }
 
-  #register-link {
-    text-decoration: none;
-    color: blue !important;
+  #landing header #register-link {
+    color: blue;
   }
 
   main {
@@ -234,6 +233,13 @@ footer .divider {
         position: relative;
       }
     }
+  }
+
+  #form > input,
+  button,
+  select,
+  textarea {
+    color: black;
   }
 
   .login-container {
