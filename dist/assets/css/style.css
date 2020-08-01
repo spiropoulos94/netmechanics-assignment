@@ -2,13 +2,13 @@ body {
   background-color: firebrick;
   margin: 0px; }
 
-header {
+#header {
   text-align: left;
   position: relative;
   top: 1.5rem; }
-  header h1 {
+  #header h1 {
     font-size: 2rem; }
-  header p {
+  #header p {
     margin-top: -1rem; }
 
 #banner {
@@ -21,26 +21,26 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
-  #landing header {
+  #landing #header {
     color: white;
     letter-spacing: 2px; }
-    #landing header #register-link {
+    #landing #header #register-link {
       text-decoration: none;
       color: white; }
-    #landing header p {
+    #landing #header p {
       font-size: 0.8rem; }
 
-main {
+#main {
   width: 65%;
   margin: auto;
   max-width: 500px;
   max-height: 100%;
   display: flex; }
-  main form {
+  #main form {
     text-align: center;
     width: 100%; }
-    main form input,
-    main form .login-btn {
+    #main form input,
+    #main form .login-btn {
       width: 95%;
       height: 5vh;
       margin: 0;
@@ -52,7 +52,7 @@ main {
       border-color: white;
       background-color: firebrick;
       font-size: 1rem; }
-    main form .login-btn {
+    #main form .login-btn {
       width: 100%;
       -webkit-border-radius: 50px;
       -moz-border-radius: 50px;
@@ -66,7 +66,7 @@ main {
       height: 44.4px;
       position: relative;
       top: 4vh; }
-    main form #terms {
+    #main form #terms {
       width: auto;
       height: auto;
       color: white; }
@@ -102,13 +102,13 @@ input:-webkit-autofill:active {
 input:-webkit-autofill {
   -webkit-text-fill-color: white !important; }
 
-footer img {
+.footer img {
   width: 4vh; }
 
-footer .divider {
+.footer .divider {
   margin-top: 20px;
   display: flex; }
-  footer .divider hr {
+  .footer .divider hr {
     width: 40%; }
 
 .social-btn {
@@ -142,21 +142,21 @@ footer .divider {
     justify-content: center;
     height: 100vh;
     background-image: linear-gradient(to right bottom, #f2c42f, #ffa034, #ff7b49, #ff5861, #ea3c7b); }
-  #landing header #register-link {
+  #landing #header #register-link {
     color: blue; }
-  main {
+  #main {
     width: 75vw;
     max-width: none;
     height: 75vh;
     display: flex;
     flex-direction: row; }
-    main form {
+    #main form {
       text-align: center;
       margin: auto;
       width: 80%;
       display: flex;
       flex-direction: column; }
-      main form input {
+      #main form input {
         height: 1.5vh;
         margin-top: 0vh;
         font-size: 1rem;
@@ -165,7 +165,7 @@ footer .divider {
         outline: 0;
         border-width: 0 0 1px;
         border-color: black; }
-      main form .login-btn {
+      #main form .login-btn {
         display: block;
         text-align: center;
         width: 25%;
@@ -235,7 +235,7 @@ footer .divider {
     border-bottom-right-radius: 10px; }
     #landing form {
       position: relative; }
-    #landing header {
+    #landing #header {
       color: black;
       letter-spacing: 2px;
       width: 80%;
@@ -243,9 +243,9 @@ footer .divider {
       margin: auto;
       position: relative;
       top: -10px; }
-      #landing header h2 {
+      #landing #header h2 {
         font-size: 2rem; }
-      #landing header p {
+      #landing #header p {
         font-size: 1vw;
         width: 60%; }
   #terms_container {
@@ -256,7 +256,7 @@ footer .divider {
     position: relative; }
     #terms_container input {
       margin-right: 3%; }
-  footer .divider {
+  .footer .divider {
     display: none; }
   .msg-icons {
     text-align: left;

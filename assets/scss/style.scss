@@ -6,7 +6,7 @@ body {
   margin: 0px;
 }
 
-header {
+#header {
   text-align: left;
 
   position: relative;
@@ -31,7 +31,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  header {
+  #header {
     color: white;
     letter-spacing: 2px;
 
@@ -46,7 +46,7 @@ header {
   }
 }
 
-main {
+#main {
   width: 65%;
   margin: auto;
   max-width: 500px;
@@ -131,13 +131,13 @@ input:-webkit-autofill {
   -webkit-text-fill-color: white !important;
 }
 
-footer {
+.footer {
   img {
     width: 4vh;
   }
 }
 
-footer .divider {
+.footer .divider {
   margin-top: 20px;
   display: flex;
   hr {
@@ -195,11 +195,11 @@ footer .divider {
     );
   }
 
-  #landing header #register-link {
+  #landing #header #register-link {
     color: blue;
   }
 
-  main {
+  #main {
     width: 75vw;
     max-width: none;
     height: 75vh;
@@ -319,7 +319,7 @@ footer .divider {
       position: relative;
     }
 
-    header {
+    #header {
       color: black;
       letter-spacing: 2px;
       width: 80%;
@@ -348,7 +348,7 @@ footer .divider {
     }
   }
 
-  footer .divider {
+  .footer .divider {
     display: none;
   }
   .msg-icons {
