@@ -114,6 +114,11 @@ input:-webkit-autofill {
 .social-btn {
   border-radius: 80%; }
 
+#fb_icon,
+#tw_icon,
+#gp_icon {
+  font-size: 0; }
+
 .social-links {
   display: flex;
   justify-content: space-around;
@@ -290,6 +295,11 @@ input:-webkit-autofill {
     text-decoration: none; }
   .social-links button:hover {
     cursor: pointer; }
+  #fb_icon,
+  #tw_icon,
+  #gp_icon {
+    font-size: 10px;
+    color: white; }
   #fb_icon {
     background-color: #4267b2; }
   #tw_icon {

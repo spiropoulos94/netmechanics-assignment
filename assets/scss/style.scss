@@ -148,6 +148,12 @@ input:-webkit-autofill {
   border-radius: 80%;
 }
 
+#fb_icon,
+#tw_icon,
+#gp_icon {
+  font-size: 0;
+}
+
 .social-links {
   display: flex;
   justify-content: space-around;
@@ -399,6 +405,13 @@ input:-webkit-autofill {
     button:hover {
       cursor: pointer;
     }
+  }
+
+  #fb_icon,
+  #tw_icon,
+  #gp_icon {
+    font-size: 10px;
+    color: white;
   }
 
   #fb_icon {
