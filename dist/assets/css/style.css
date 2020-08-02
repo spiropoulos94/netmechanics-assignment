@@ -6,7 +6,7 @@ body {
   text-align: left;
   position: relative;
   top: 1.5rem; }
-  #header h1 {
+  #header h2 {
     font-size: 2rem; }
   #header p {
     margin-top: -1rem; }
@@ -24,11 +24,12 @@ body {
   #landing #header {
     color: white;
     letter-spacing: 2px; }
-    #landing #header #register-link {
-      text-decoration: none;
-      color: white; }
     #landing #header p {
       font-size: 0.8rem; }
+
+#register-link {
+  text-decoration: none;
+  color: white; }
 
 #main {
   width: 65%;
@@ -36,40 +37,44 @@ body {
   max-width: 500px;
   max-height: 100%;
   display: flex; }
-  #main form {
-    text-align: center;
-    width: 100%; }
-    #main form input,
-    #main form .login-btn {
-      width: 95%;
-      height: 5vh;
-      margin: 0;
-      padding: 5px;
-      margin-top: 1.5vh;
-      -webkit-border-radius: 50px;
-      -moz-border-radius: 50px;
-      border-radius: 50px;
-      border-color: white;
-      background-color: firebrick;
-      font-size: 1rem; }
-    #main form .login-btn {
-      width: 100%;
-      -webkit-border-radius: 50px;
-      -moz-border-radius: 50px;
-      border-radius: 50px;
-      color: red;
-      background-color: white;
-      font-weight: bold;
-      letter-spacing: 1px;
-      padding: 5px;
-      font-size: 1rem;
-      height: 44.4px;
-      position: relative;
-      top: 4vh; }
-    #main form #terms {
-      width: auto;
-      height: auto;
-      color: white; }
+
+form {
+  text-align: center;
+  width: 100%; }
+
+input,
+.login-btn {
+  width: 95%;
+  height: 5vh;
+  margin: 0;
+  padding: 5px;
+  margin-top: 1.5vh;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  border-color: white;
+  background-color: firebrick;
+  font-size: 1rem; }
+
+.login-btn {
+  width: 100%;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  color: red;
+  background-color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 5px;
+  font-size: 1rem;
+  height: 44.4px;
+  position: relative;
+  top: 4vh; }
+
+#terms {
+  width: auto;
+  height: auto;
+  color: white; }
 
 #form > input::placeholder {
   color: white; }
