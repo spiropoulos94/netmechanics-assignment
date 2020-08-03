@@ -1,4 +1,4 @@
-const { src, dest, watch } = require("gulp");
+const { src, dest, watch, series } = require("gulp");
 const sass = require("gulp-sass");
 
 const sourcemaps = require("gulp-sourcemaps");
@@ -24,6 +24,10 @@ function watchChanges() {
   });
   watch("./assets/scss/*.scss", compileSass);
   watch("./*.html").on("change", browserSync.reload);
+  watch("./assets/scss/*.scss").on("change", browserSync.reload);
 }
 
 exports.watchChanges = watchChanges;
+
+//this default gulp tasks is listening on changes in scss and it provides a sourcemap along with a hot-reload browser.
+exports.default = series(compileSass, watchChanges);
