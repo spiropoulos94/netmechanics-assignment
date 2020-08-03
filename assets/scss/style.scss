@@ -20,7 +20,7 @@ body {
 
 #banner {
   display: none;
-  #landing_image {
+  #landingImage {
     width: 100%;
   }
 }
@@ -40,7 +40,7 @@ body {
   }
 }
 
-#register-link {
+#registerLink {
   text-decoration: none;
   color: white;
 }
@@ -97,7 +97,7 @@ form {
   color: white;
 }
 
-#terms_container {
+#termsContainer {
   color: white;
   font-size: 10px;
   position: relative;
@@ -163,7 +163,7 @@ input:-webkit-autofill {
   }
 }
 
-#login-social-msg {
+#loginSocialMsg {
   display: none;
 }
 
@@ -187,6 +187,13 @@ input:-webkit-autofill {
     background-color: white;
   }
 
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1vw;
+    width: 60%;
+  }
   #page {
     display: flex;
     justify-content: center;
@@ -201,7 +208,7 @@ input:-webkit-autofill {
     );
   }
 
-  #landing #header #register-link {
+  #landing #header #registerLink {
     color: blue;
   }
 
@@ -362,7 +369,7 @@ input:-webkit-autofill {
     }
   }
 
-  #terms_container {
+  #termsContainer {
     color: black;
     font-size: 14px;
     display: flex;
@@ -392,7 +399,7 @@ input:-webkit-autofill {
     top: 10px;
   }
 
-  #login-social-msg {
+  #loginSocialMsg {
     display: flex;
     left: 10%;
     z-index: 1;
@@ -426,22 +433,22 @@ input:-webkit-autofill {
     }
   }
 
-  #fb_icon,
-  #tw_icon,
-  #gp_icon {
+  #fbIcon,
+  #twIcon,
+  #gpIcon {
     font-size: 10px;
     color: white;
   }
 
-  #fb_icon {
+  #fbIcon {
     background-color: #4267b2;
   }
 
-  #tw_icon {
+  #twIcon {
     background-color: #1da1f2;
   }
 
-  #gp_icon {
+  #gpIcon {
     background-color: #dd4b39;
   }
 }

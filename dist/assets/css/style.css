@@ -13,7 +13,7 @@ body {
 
 #banner {
   display: none; }
-  #banner #landing_image {
+  #banner #landingImage {
     width: 100%; }
 
 #landing {
@@ -27,7 +27,7 @@ body {
     #landing #header p {
       font-size: 0.8rem; }
 
-#register-link {
+#registerLink {
   text-decoration: none;
   color: white; }
 
@@ -79,7 +79,7 @@ form {
 #form > input::placeholder {
   color: white; }
 
-#terms_container {
+#termsContainer {
   color: white;
   font-size: 10px;
   position: relative;
@@ -131,7 +131,7 @@ input:-webkit-autofill {
   .social-links img {
     width: 30px; }
 
-#login-social-msg {
+#loginSocialMsg {
   display: none; }
 
 .login-btn:hover {
@@ -147,12 +147,17 @@ input:-webkit-autofill {
 @media only screen and (min-width: 992px) {
   body {
     background-color: white; }
+  h2 {
+    font-size: 2rem; }
+  p {
+    font-size: 1vw;
+    width: 60%; }
   #page {
     display: flex;
     justify-content: center;
     height: 100vh;
     background-image: linear-gradient(to right bottom, #f2c42f, #ffa034, #ff7b49, #ff5861, #ea3c7b); }
-  #landing #header #register-link {
+  #landing #header #registerLink {
     color: blue; }
   #main {
     width: 75vw;
@@ -258,13 +263,13 @@ input:-webkit-autofill {
     #header p {
       font-size: 1vw;
       width: 60%; }
-  #terms_container {
+  #termsContainer {
     color: black;
     font-size: 14px;
     display: flex;
     justify-content: start;
     position: relative; }
-    #terms_container input {
+    #termsContainer input {
       margin-right: 3%; }
   .footer .divider {
     display: none; }
@@ -279,7 +284,7 @@ input:-webkit-autofill {
   .social-links {
     position: relative;
     top: 10px; }
-  #login-social-msg {
+  #loginSocialMsg {
     display: flex;
     left: 10%;
     z-index: 1; }
@@ -300,14 +305,14 @@ input:-webkit-autofill {
     text-decoration: none; }
   .social-links button:hover {
     cursor: pointer; }
-  #fb_icon,
-  #tw_icon,
-  #gp_icon {
+  #fbIcon,
+  #twIcon,
+  #gpIcon {
     font-size: 10px;
     color: white; }
-  #fb_icon {
+  #fbIcon {
     background-color: #4267b2; }
-  #tw_icon {
+  #twIcon {
     background-color: #1da1f2; }
-  #gp_icon {
+  #gpIcon {
     background-color: #dd4b39; } }
