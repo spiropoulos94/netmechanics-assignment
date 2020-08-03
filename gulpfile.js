@@ -1,30 +1,29 @@
-const gulp = require("gulp");
-
+const { src, dest, watch } = require("gulp");
 const sass = require("gulp-sass");
+
+const sourcemaps = require("gulp-sourcemaps");
 
 const browserSync = require("browser-sync").create();
 
-function style() {
-  return (
-    gulp
-      .src("./assets/scss/*.scss")
-      .pipe(sass().on("error", sass.logError))
-      .pipe(gulp.dest("./dist/assets/css"))
-      //stream changes
-      .pipe(browserSync.stream())
-  );
+function compileSass(done) {
+  src("./assets/scss/*.scss")
+    .pipe(sourcemaps.init())
+    .pipe(sass().on("error", sass.logError))
+    .pipe(sourcemaps.write("."))
+    .pipe(dest("./dist/assets/css"));
+  done();
 }
 
-function watch() {
+exports.compileSass = compileSass;
+
+function watchChanges() {
   browserSync.init({
     server: {
       baseDir: "./",
     },
   });
-  gulp.watch("./assets/scss/*.scss", style);
-  gulp.watch("./*.html").on("change", browserSync.reload);
+  watch("./assets/scss/*.scss", compileSass);
+  watch("./*.html").on("change", browserSync.reload);
 }
 
-exports.style = style;
-
-exports.watch = watch;
+exports.watchChanges = watchChanges;
