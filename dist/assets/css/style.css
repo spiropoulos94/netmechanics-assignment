@@ -42,7 +42,7 @@ form {
   text-align: center;
   width: 100%; }
 
-input,
+.stats-input,
 .login-btn {
   width: 95%;
   height: 5vh;
@@ -105,7 +105,7 @@ input:-webkit-autofill:active {
   color: white; }
 
 input:-webkit-autofill {
-  -webkit-text-fill-color: white !important; }
+  -webkit-text-fill-color: white; }
 
 .footer img {
   width: 4vh; }
@@ -209,21 +209,6 @@ input:-webkit-autofill {
     text-align: center;
     color: white;
     width: 50%; }
-    #banner .banner_text {
-      text-align: left !important;
-      height: fit-content;
-      position: absolute;
-      top: 30%;
-      left: 35%;
-      transform: translate(-50%, -50%); }
-      #banner .banner_text h1 {
-        font-size: 5rem;
-        margin-top: 0px;
-        margin-bottom: 0px; }
-      #banner .banner_text p {
-        font-size: 1rem;
-        position: relative;
-        top: -10px; }
     #banner img {
       width: 100%;
       height: 100%;
@@ -233,6 +218,21 @@ input:-webkit-autofill {
       -moz-border-radius-bottomleft: 10px;
       border-top-left-radius: 10px;
       border-bottom-left-radius: 10px; }
+  .banner_text {
+    text-align: left;
+    height: fit-content;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    transform: translate(-50%, -50%); }
+    .banner_text h1 {
+      font-size: 5rem;
+      margin-top: 0px;
+      margin-bottom: 0px; }
+    .banner_text p {
+      font-size: 1rem;
+      position: relative;
+      top: -10px; }
   #landing {
     width: 50%;
     background-color: white;
@@ -245,19 +245,19 @@ input:-webkit-autofill {
     border-bottom-right-radius: 10px; }
     #landing form {
       position: relative; }
-    #landing #header {
-      color: black;
-      letter-spacing: 2px;
-      width: 80%;
-      display: block;
-      margin: auto;
-      position: relative;
-      top: -10px; }
-      #landing #header h2 {
-        font-size: 2rem; }
-      #landing #header p {
-        font-size: 1vw;
-        width: 60%; }
+  #header {
+    color: black !important;
+    letter-spacing: 2px;
+    width: 80%;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -10px; }
+    #header h2 {
+      font-size: 2rem; }
+    #header p {
+      font-size: 1vw;
+      width: 60%; }
   #terms_container {
     color: black;
     font-size: 14px;

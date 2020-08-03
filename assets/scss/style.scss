@@ -58,7 +58,7 @@ form {
   width: 100%;
 }
 
-input,
+.stats-input,
 .login-btn {
   width: 95%;
   height: $inputSize;
@@ -128,7 +128,7 @@ input:-webkit-autofill:active {
 }
 
 input:-webkit-autofill {
-  -webkit-text-fill-color: white !important;
+  -webkit-text-fill-color: white;
 }
 
 .footer {
@@ -279,25 +279,7 @@ input:-webkit-autofill {
     text-align: center;
     color: white;
     width: 50%;
-    .banner_text {
-      text-align: left !important;
-      height: fit-content;
-      position: absolute;
-      top: 30%;
-      left: 35%;
-      transform: translate(-50%, -50%);
 
-      h1 {
-        font-size: 5rem;
-        margin-top: 0px;
-        margin-bottom: 0px;
-      }
-      p {
-        font-size: 1rem;
-        position: relative;
-        top: -10px;
-      }
-    }
     img {
       width: 100%;
       height: 100%;
@@ -307,6 +289,26 @@ input:-webkit-autofill {
       -moz-border-radius-bottomleft: 10px;
       border-top-left-radius: 10px;
       border-bottom-left-radius: 10px;
+    }
+  }
+
+  .banner_text {
+    text-align: left;
+    height: fit-content;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+
+    h1 {
+      font-size: 5rem;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    p {
+      font-size: 1rem;
+      position: relative;
+      top: -10px;
     }
   }
 
@@ -325,21 +327,38 @@ input:-webkit-autofill {
       position: relative;
     }
 
-    #header {
-      color: black;
-      letter-spacing: 2px;
-      width: 80%;
-      display: block;
-      margin: auto;
-      position: relative;
-      top: -10px;
-      h2 {
-        font-size: 2rem;
-      }
-      p {
-        font-size: 1vw;
-        width: 60%;
-      }
+    //#header {
+    //  color: black;
+    //  letter-spacing: 2px;
+    //  width: 80%;
+    //  display: block;
+    //  margin: auto;
+    //  position: relative;
+    //  top: -10px;
+    //  h2 {
+    //    font-size: 2rem;
+    //  }
+    //  p {
+    //    font-size: 1vw;
+    //    width: 60%;
+    //  }
+    //}
+  }
+
+  #header {
+    color: black !important; // I used !important here because this header continues to inherit the white colour from the mobile design.
+    letter-spacing: 2px;
+    width: 80%;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -10px;
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1vw;
+      width: 60%;
     }
   }
 
