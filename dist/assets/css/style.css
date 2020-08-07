@@ -5,11 +5,14 @@ body {
 .header-text {
   text-align: left;
   position: relative;
-  top: 1.5rem; }
+  top: 1.5rem;
+  color: white;
+  letter-spacing: 2px; }
   .header-text h2 {
     font-size: 2rem; }
   .header-text p {
-    margin-top: -1rem; }
+    margin-top: -1rem;
+    font-size: 0.8rem; }
 
 .banner {
   display: none; }
@@ -21,11 +24,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
-  .landing-inputs .header-text {
-    color: white;
-    letter-spacing: 2px; }
-    .landing-inputs .header-text p {
-      font-size: 0.8rem; }
 
 .register-link {
   text-decoration: none;
@@ -79,7 +77,7 @@ form {
 .form > input::placeholder {
   color: white; }
 
-.termsContainer {
+.terms-container {
   color: white;
   font-size: 10px;
   position: relative;
@@ -107,7 +105,7 @@ input:-webkit-autofill:active {
 input:-webkit-autofill {
   -webkit-text-fill-color: white; }
 
-.footer img {
+.footer .favicon {
   width: 4vh; }
 
 .footer .divider {
@@ -115,10 +113,6 @@ input:-webkit-autofill {
   display: flex; }
   .footer .divider hr {
     width: 40%; }
-
-.social-btn {
-  border-radius: 80%;
-  font-size: 10px; }
 
 .social-links {
   display: flex;
@@ -160,13 +154,14 @@ input:-webkit-autofill {
     height: 75vh;
     display: flex;
     flex-direction: row; }
-    .main-container form {
+    .main-container .form {
       text-align: center;
       margin: auto;
       width: 80%;
       display: flex;
-      flex-direction: column; }
-      .main-container form input {
+      flex-direction: column;
+      position: relative; }
+      .main-container .form input {
         height: 1.5vh;
         margin-top: 0vh;
         font-size: 1rem;
@@ -175,7 +170,7 @@ input:-webkit-autofill {
         outline: 0;
         border-width: 0 0 1px;
         border-color: black; }
-      .main-container form .login-btn {
+      .main-container .form .login-btn {
         display: block;
         text-align: center;
         width: 25%;
@@ -243,8 +238,6 @@ input:-webkit-autofill {
     -moz-border-radius-bottomright: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px; }
-    .landing-inputs form {
-      position: relative; }
   .header-text {
     color: black !important;
     letter-spacing: 2px;
@@ -258,13 +251,13 @@ input:-webkit-autofill {
     .header-text p {
       font-size: 1vw;
       width: 60%; }
-  .termsContainer {
+  .terms-container {
     color: black;
     font-size: 14px;
     display: flex;
     justify-content: start;
     position: relative; }
-    .termsContainer input {
+    .terms-container input {
       margin-right: 3%; }
   .footer .divider {
     display: none; }
@@ -276,9 +269,6 @@ input:-webkit-autofill {
     .msg-icons span {
       position: relative;
       left: 12%; }
-  .social-links {
-    position: relative;
-    top: 10px; }
   .loginSocialMsg {
     display: flex;
     left: 10%;
@@ -287,27 +277,25 @@ input:-webkit-autofill {
     display: inline;
     color: white;
     font-size: 0.5rem; }
-  .social-links button {
-    background-color: transparent;
-    border: 0px;
-    display: flex;
-    align-items: center;
-    border-radius: 30px;
-    width: 6vw; }
-    .social-links button img {
-      width: 20px; }
-  .social-links a {
-    text-decoration: none; }
-  .social-links button:hover {
-    cursor: pointer; }
-  .social-links .social-btn {
-    background-color: transparent;
-    border: 0px;
-    color: white; }
-    .social-links .social-btn .text {
-      display: block;
-      width: 50%;
-      font-size: 8px; }
+  .social-links {
+    position: relative;
+    top: 10px; }
+    .social-links .social-btn {
+      background-color: transparent;
+      border: 0px;
+      display: flex;
+      align-items: center;
+      border-radius: 30px;
+      width: 7vw;
+      color: white; }
+      .social-links .social-btn .text {
+        display: block;
+        width: 50%;
+        font-size: 9px; }
+    .social-links a {
+      text-decoration: none; }
+    .social-links button:hover {
+      cursor: pointer; }
   .social-btn {
     color: white; }
     .social-btn.fb {
