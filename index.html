@@ -6,21 +6,21 @@
     <link rel="stylesheet" href="./dist/assets/css/style.css">
   </head>
   <body>
-    <div id="page">
-    <div id="main">
-      <div id="banner">
-        <img id="landingImage" src="./dist/assets/images/landing_image.jpg" alt="langing image">
+    <div  class="whole-page">
+    <div  class="main-container">
+      <div class="banner" >
+        <img class="landingImage" src="./dist/assets/images/landing_image.jpg" alt="langing image">
         <div class="banner_text">
           <h1>Hello<br> World.</h1>
           <p>Lorem Ipsum dolor sit amet <br> onsectur ad plicit est te.</p>
         </div>
       </div>
-      <div id="landing">
-        <div id='header'>
+      <div class="landing-inputs">
+        <div  class="header-text">
           <h2>Register</h2>
-          <p>Don't have an account? <a href="#" id="registerLink">Create your account</a>, it takes less than a minute.</p>
+          <p>Don't have an account? <a href="#" class="register-link">Create your account</a>, it takes less than a minute.</p>
       </div>
-        <form id="form" >
+        <form class="form">
           <label for="name"></label>
             <input class="stats-input" type="text" placeholder="Name" id="name" name="name" value=""><br>
           <label for="email"></label>
@@ -29,7 +29,7 @@
             <input class="stats-input" type="tel" placeholder="Phone Number" id="phone" name="phone" value=""><br>
           <label for="password"></label>
             <input class="stats-input" type="password" placeholder="Password" id="password" name="password" value=""><br>
-          <div id="termsContainer">
+          <div class="termsContainer">
           <input type="checkbox" id="terms" name="terms">I accept terms and Conditions & Privacy Policy<br>
         </div><br>
         <div class="login-container">
@@ -39,7 +39,7 @@
         <div class="footer">
           <div class="divider"><hr><span>Or</span><hr></div>
           <div class="msg-icons">
-               <span id="loginSocialMsg">Log in with social media</span>
+               <span class="loginSocialMsg">Log in with social media</span>
              <!--<div class="social-links">
                <button id="fb_icon" class='social_btn' ></button><a href="#" target="_blank"><p class="btn_txt"></p>
                  <img alt="favicons" src="dist/assets/favicons/facebook.png">Facebook</a></button>
@@ -49,14 +49,14 @@
                  <img alt="favicons" src="dist/assets/favicons/google-plus.png">Google+</a></button>
              </div> -->
           <div class="social-links">
-            <button id="fbIcon" class='social_btn'  >
-              <img alt="favicons" src="dist/assets/favicons/facebook.png">Facebook
+            <button id="fbIcon" class='social-btn fb'  >
+              <img alt="favicons" src="dist/assets/favicons/facebook.png"><span class="text">Facebook</span>
             </button>
-            <button id="twIcon" class='social_btn' >
-              <img alt="favicons" src="dist/assets/favicons/twitter.png">Twitter
+            <button id="twIcon" class='social-btn twitter' >
+              <img alt="favicons" src="dist/assets/favicons/twitter.png"><span class="text">Twitter</span>
             </button>
-            <button id="gpIcon" class='social_btn' >
-              <img alt="favicons" src="dist/assets/favicons/google-plus.png">Google+
+            <button id="gpIcon" class='social-btn google-plus' >
+              <img alt="favicons" src="dist/assets/favicons/google-plus.png"><span  class="text" >Google+</span>
             </button>
           </div>
         </div>
