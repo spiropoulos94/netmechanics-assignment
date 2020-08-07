@@ -106,7 +106,8 @@ input:-webkit-autofill {
   -webkit-text-fill-color: white; }
 
 .footer .favicon {
-  width: 4vh; }
+  width: 16px;
+  height: 16px; }
 
 .footer .divider {
   margin-top: 20px;
