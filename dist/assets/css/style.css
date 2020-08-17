@@ -75,7 +75,10 @@ body {
   height: auto;
   color: white; }
 
-.form > input::placeholder {
+.data-input:focus,
+.data-input,
+.data-input::placeholder {
+  outline: none;
   color: white; }
 
 .terms-container {
@@ -88,7 +91,7 @@ body {
 .divider {
   color: white; }
 
-.form > input,
+.form > .data-input,
 button,
 select,
 textarea {
@@ -177,6 +180,10 @@ input:-webkit-autofill {
     outline: 0;
     border-width: 0 0 1px;
     border-color: black; }
+  .data-input:focus,
+  .data-input,
+  .data-input::placeholder {
+    color: black; }
   .form > input {
     color: black;
     outline: none; }
@@ -194,7 +201,8 @@ input:-webkit-autofill {
     display: inline;
     text-align: left;
     width: 5rem;
-    border-bottom: 1px solid black; }
+    border-bottom: 1px solid black;
+    font-size: 1.2rem; }
   .form {
     color: black; }
   .data-input {

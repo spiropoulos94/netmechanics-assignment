@@ -91,8 +91,11 @@ body {
     color: white;
 }
 
-.form>input::placeholder {
-    color: white;
+.data-input:focus,
+.data-input,
+.data-input::placeholder {
+    outline: none;
+    color: white
 }
 
 .terms-container {
@@ -108,7 +111,7 @@ body {
 }
 
 //removing outline when input is on focus
-.form>input,
+.form>.data-input,
 button,
 select,
 textarea {
@@ -179,7 +182,6 @@ input:-webkit-autofill {
         background-color: white;
     }
     .input-group {
-        //background-color: red;
         display: flex;
         margin: 3vh 0px;
     }
@@ -225,6 +227,11 @@ input:-webkit-autofill {
         border-width: 0 0 1px;
         border-color: black;
     }
+    .data-input:focus,
+    .data-input,
+    .data-input::placeholder {
+        color: black
+    }
     .form>input {
         color: black;
         outline: none;
@@ -245,6 +252,7 @@ input:-webkit-autofill {
         text-align: left;
         width: 5rem;
         border-bottom: 1px solid black;
+        font-size: 1.2rem
     }
     .form {
         color: black;
