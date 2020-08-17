@@ -1,12 +1,10 @@
 body {
   background-color: firebrick;
-  margin: 0px; }
+  margin: 0px;
+  color: white; }
 
 .header-text {
   text-align: left;
-  position: relative;
-  top: 1.5rem;
-  color: white;
   letter-spacing: 2px; }
   .header-text .heading {
     font-size: 2rem; }
@@ -27,8 +25,7 @@ body {
   justify-content: space-around; }
 
 .register-link {
-  text-decoration: none;
-  color: white; }
+  text-decoration: none; }
 
 .main-container {
   width: 65%;
@@ -38,8 +35,7 @@ body {
   display: flex; }
 
 .form {
-  text-align: center;
-  width: 100%; }
+  text-align: center; }
 
 .label-title {
   display: none; }
@@ -47,8 +43,9 @@ body {
 .data-input,
 .login-btn {
   width: 95%;
-  height: 5vh;
+  height: 3rem;
   padding: 5px;
+  margin: 5px;
   border-radius: 50px;
   border-color: white;
   background-color: firebrick; }
@@ -62,20 +59,16 @@ body {
   letter-spacing: 1px;
   padding: 5px;
   font-size: 1rem;
-  height: 44.4px;
-  position: relative;
-  top: 4vh; }
+  height: 44.4px; }
 
 #terms {
   width: auto;
-  height: auto;
-  color: white; }
+  height: auto; }
 
 .data-input:focus,
 .data-input,
 .data-input::placeholder {
-  outline: none;
-  color: white; }
+  outline: none; }
 
 .terms-container {
   color: white;
@@ -84,16 +77,12 @@ body {
   left: 2px;
   top: 0.5rem; }
 
-.divider {
-  color: white; }
-
 /* Changing AutoFill Background Color and Text Color */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  box-shadow: 0 0 0 30px firebrick inset;
-  color: white; }
+  box-shadow: 0 0 0 30px firebrick inset; }
 
 input:-webkit-autofill {
   -webkit-text-fill-color: white; }
@@ -103,7 +92,7 @@ input:-webkit-autofill {
   height: 16px; }
 
 .social-container .divider {
-  margin-top: 10vh;
+  margin-top: 20px;
   display: flex; }
   .social-container .divider hr {
     width: 40%; }
@@ -133,7 +122,7 @@ input:-webkit-autofill {
     background-color: white; }
   .input-group {
     display: flex;
-    margin: 1.1rem 0px; }
+    margin: 14px 0px; }
   .heading {
     font-size: 2rem; }
   .subtext {
@@ -155,7 +144,6 @@ input:-webkit-autofill {
     min-height: 500px; }
   .form {
     text-align: center;
-    margin: auto;
     display: flex;
     flex-direction: column; }
   .data-input {
@@ -165,7 +153,8 @@ input:-webkit-autofill {
     border-radius: 0px;
     outline: 0;
     border-width: 0 0 1px;
-    border-color: black; }
+    border-color: black;
+    margin: 0; }
   .data-input:focus,
   .data-input,
   .data-input::placeholder {
@@ -177,9 +166,8 @@ input:-webkit-autofill {
     display: block;
     text-align: center;
     width: 25%;
-    height: 4vh;
+    height: 22px;
     background-color: red;
-    color: white;
     font-size: 10px;
     position: relative;
     z-index: 2; }
@@ -210,7 +198,6 @@ input:-webkit-autofill {
     display: block;
     position: relative;
     text-align: center;
-    color: white;
     width: 50%; }
     .content .landing-image {
       width: 100%;
@@ -247,12 +234,11 @@ input:-webkit-autofill {
     -moz-border-radius-bottomright: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding: 0 3%; }
+    padding: 0 6%; }
   .header-text {
     color: black !important;
     letter-spacing: 2px;
-    display: block;
-    position: relative; }
+    display: block; }
     .header-text .heading {
       font-size: 2rem; }
     .header-text .subtext {
@@ -271,8 +257,7 @@ input:-webkit-autofill {
   .msg-icons {
     text-align: left;
     display: flex;
-    flex-direction: column;
-    padding-bottom: 8%; }
+    flex-direction: column; }
     .msg-icons span {
       position: relative; }
   .login-social-msg {

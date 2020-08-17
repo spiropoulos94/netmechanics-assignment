@@ -2,17 +2,16 @@
 //TODO color in body tag
 // TODO border focus state
 $pageColor: firebrick;
-$inputSize: 5vh;
+$inputSize: 3rem;
 body {
   background-color: $pageColor;
   margin: 0px;
+  color: white;
 }
 
 .header-text {
   text-align: left;
-  position: relative;
-  top: 1.5rem;
-  color: white;
+
   letter-spacing: 2px;
   .heading {
     font-size: 2rem;
@@ -40,7 +39,6 @@ body {
 
 .register-link {
   text-decoration: none;
-  color: white;
 }
 
 .main-container {
@@ -53,7 +51,7 @@ body {
 
 .form {
   text-align: center;
-  width: 100%;
+  //width: 100%;
 }
 
 .label-title {
@@ -65,7 +63,7 @@ body {
   width: 95%;
   height: $inputSize;
   padding: 5px;
-
+  margin: 5px;
   border-radius: 50px;
   border-color: white;
   background-color: $pageColor;
@@ -81,21 +79,17 @@ body {
   padding: 5px;
   font-size: 1rem;
   height: 44.4px;
-  position: relative;
-  top: 4vh;
 }
 
 #terms {
   width: auto;
   height: auto;
-  color: white;
 }
 
 .data-input:focus,
 .data-input,
 .data-input::placeholder {
   outline: none;
-  color: white;
 }
 
 .terms-container {
@@ -107,7 +101,7 @@ body {
 }
 
 .divider {
-  color: white;
+  //color: white;
 }
 
 /* Changing AutoFill Background Color and Text Color */
@@ -117,7 +111,7 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   box-shadow: 0 0 0 30px firebrick inset;
-  color: white;
+  //color: white;
 }
 
 input:-webkit-autofill {
@@ -132,7 +126,7 @@ input:-webkit-autofill {
 }
 
 .social-container .divider {
-  margin-top: 10vh;
+  margin-top: 20px;
   display: flex;
   hr {
     width: 40%;
@@ -173,7 +167,7 @@ input:-webkit-autofill {
   }
   .input-group {
     display: flex;
-    margin: 1.1rem 0px;
+    margin: 14px 0px;
   }
   .heading {
     font-size: 2rem;
@@ -208,19 +202,18 @@ input:-webkit-autofill {
   }
   .form {
     text-align: center;
-    margin: auto;
-
     display: flex;
     flex-direction: column;
   }
   .data-input {
-    height: 12px; // TODO set height in pixels
+    height: 12px;
     font-size: 1rem;
     background-color: white;
     border-radius: 0px;
     outline: 0;
     border-width: 0 0 1px;
     border-color: black;
+    margin: 0;
   }
   .data-input:focus,
   .data-input,
@@ -235,9 +228,9 @@ input:-webkit-autofill {
     display: block;
     text-align: center;
     width: 25%;
-    height: 4vh;
+    height: 22px;
     background-color: red;
-    color: white;
+    //color: white;
     font-size: 10px;
     position: relative;
     z-index: 2;
@@ -278,7 +271,7 @@ input:-webkit-autofill {
     display: block;
     position: relative;
     text-align: center;
-    color: white;
+    //color: white;
     width: 50%;
     .landing-image {
       width: 100%;
@@ -321,16 +314,13 @@ input:-webkit-autofill {
     -moz-border-radius-bottomright: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding: 0 3%;
+    padding: 0 6%;
   }
   .header-text {
     color: black !important; // I used !important here because this header continues to inherit the white colour from the mobile design.
     letter-spacing: 2px;
-    //width: 80%;
     display: block;
-    //margin: auto;
-    position: relative;
-    // top: -10px;
+
     .heading {
       font-size: 2rem;
     }
@@ -356,7 +346,7 @@ input:-webkit-autofill {
     text-align: left;
     display: flex;
     flex-direction: column;
-    padding-bottom: 8%;
+
     span {
       position: relative;
     }
