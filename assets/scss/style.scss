@@ -12,18 +12,18 @@ body {
   top: 1.5rem;
   color: white;
   letter-spacing: 2px;
-  h2 {
+  .heading {
     font-size: 2rem;
   }
-  p {
+  .subtext {
     margin-top: -1rem;
     font-size: 0.8rem;
   }
 }
 
-.banner {
+.content {
   display: none;
-  .landingImage {
+  .landing-image {
     width: 100%;
   }
 }
@@ -48,12 +48,16 @@ body {
   display: flex;
 }
 
-form {
+.form {
   text-align: center;
   width: 100%;
 }
 
-.stats-input,
+.label-title {
+  display:none
+}
+
+.data-input,
 .login-btn {
   width: 95%;
   height: $inputSize;
@@ -127,14 +131,14 @@ input:-webkit-autofill {
 }
 
 .footer {
-  .favicon {
+  .icon {
     width: 16px;
     height: 16px;
   }
 }
 
-.footer .divider {
-  margin-top: 20px;
+.social-container .divider {
+  margin-top: 10vh;
   display: flex;
   hr {
     width: 40%;
@@ -145,12 +149,13 @@ input:-webkit-autofill {
   display: flex;
   justify-content: space-around;
   padding-top: 10px;
-  img {
+  .icon {
     width: 30px;
+    
   }
 }
 
-.loginSocialMsg {
+.login-social-msg {
   display: none;
 }
 
@@ -158,9 +163,7 @@ input:-webkit-autofill {
   cursor: pointer;
 }
 
-//.btn_txt {
-//  display: none;
-//}
+
 
 .social-links {
   .social-btn {
@@ -178,12 +181,16 @@ input:-webkit-autofill {
     background-color: white;
   }
 
-  h2 {
+ 
+
+  .heading {
     font-size: 2rem;
+    
   }
-  p {
+  .subtext {
     font-size: 1vw;
     width: 60%;
+    
   }
   .whole-page {
     display: flex;
@@ -210,37 +217,49 @@ input:-webkit-autofill {
     display: flex;
     flex-direction: row;
 
-    .form {
-      text-align: center;
-      margin: auto;
-      width: 80%;
-      display: flex;
-      flex-direction: column;
-      position: relative;
+    
+  }
 
-      input {
-        height: 1.5vh;
-        margin-top: 0vh;
-        font-size: 1rem;
-        background-color: white;
-        border-radius: 0px;
-        outline: 0;
-        border-width: 0 0 1px;
-        border-color: black;
-      }
+  .form {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 20px;
 
-      .login-btn {
-        display: block;
-        text-align: center;
-        width: 25%;
-        height: 4vh;
-        background-color: red;
-        color: white;
-        font-size: 10px;
-        position: relative;
-        z-index: 2;
-      }
+    input {
+      height: 1.5vh;
+      margin-top: 0vh;
+      font-size: 1rem;
+      background-color: white;
+      border-radius: 0px;
+      outline: 0;
+      border-width: 0 0 1px;
+      border-color: black;
     }
+
+    .login-btn {
+      display: block;
+      text-align: center;
+      width: 25%;
+      height: 4vh;
+      background-color: red;
+      color: white;
+      font-size: 10px;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  
+
+  .label-title {
+    display:inline;
+    text-align: left;
+    
+    
   }
 
   .form > input,
@@ -264,7 +283,8 @@ input:-webkit-autofill {
   }
   .form {
     input::placeholder {
-      color: black;
+      color: transparent;
+     
     }
   }
 
@@ -272,7 +292,7 @@ input:-webkit-autofill {
     -webkit-text-fill-color: black !important;
   }
 
-  .banner {
+  .content {
     display: block;
     position: relative;
     text-align: center;
@@ -291,7 +311,7 @@ input:-webkit-autofill {
     }
   }
 
-  .banner_text {
+  .content-text {
     text-align: left;
     height: fit-content;
     position: absolute;
@@ -322,22 +342,7 @@ input:-webkit-autofill {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 
-    //#header {
-    //  color: black;
-    //  letter-spacing: 2px;
-    //  width: 80%;
-    //  display: block;
-    //  margin: auto;
-    //  position: relative;
-    //  top: -10px;
-    //  h2 {
-    //    font-size: 2rem;
-    //  }
-    //  p {
-    //    font-size: 1vw;
-    //    width: 60%;
-    //  }
-    //}
+    
   }
 
   .header-text {
@@ -348,10 +353,10 @@ input:-webkit-autofill {
     margin: auto;
     position: relative;
     top: -10px;
-    h2 {
+    .heading {
       font-size: 2rem;
     }
-    p {
+    .subtext {
       font-size: 1vw;
       width: 60%;
     }
@@ -369,7 +374,7 @@ input:-webkit-autofill {
     }
   }
 
-  .footer .divider {
+  .social-container .divider {
     display: none;
   }
   .msg-icons {
@@ -379,25 +384,20 @@ input:-webkit-autofill {
     padding-bottom: 8%;
     span {
       position: relative;
-      left: 12%;
+      
     }
   }
 
-  .loginSocialMsg {
+  .login-social-msg {
     display: flex;
-    left: 10%;
     z-index: 1;
+    
   }
 
-  .btn_txt {
-    display: inline;
-    color: white;
-    font-size: 0.5rem;
-  }
-
+ 
   .social-links {
     position: relative;
-    top: 10px;
+    top: 3rem;
     .social-btn {
       background-color: transparent;
       border: 0px;
@@ -435,4 +435,6 @@ input:-webkit-autofill {
       background-color: #dd4b39;
     }
   }
+
+  
 }

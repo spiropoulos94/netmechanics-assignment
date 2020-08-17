@@ -8,15 +8,15 @@ body {
   top: 1.5rem;
   color: white;
   letter-spacing: 2px; }
-  .header-text h2 {
+  .header-text .heading {
     font-size: 2rem; }
-  .header-text p {
+  .header-text .subtext {
     margin-top: -1rem;
     font-size: 0.8rem; }
 
-.banner {
+.content {
   display: none; }
-  .banner .landingImage {
+  .content .landing-image {
     width: 100%; }
 
 .landing-inputs {
@@ -36,11 +36,14 @@ body {
   max-height: 100%;
   display: flex; }
 
-form {
+.form {
   text-align: center;
   width: 100%; }
 
-.stats-input,
+.label-title {
+  display: none; }
+
+.data-input,
 .login-btn {
   width: 95%;
   height: 5vh;
@@ -105,24 +108,24 @@ input:-webkit-autofill:active {
 input:-webkit-autofill {
   -webkit-text-fill-color: white; }
 
-.footer .favicon {
+.footer .icon {
   width: 16px;
   height: 16px; }
 
-.footer .divider {
-  margin-top: 20px;
+.social-container .divider {
+  margin-top: 10vh;
   display: flex; }
-  .footer .divider hr {
+  .social-container .divider hr {
     width: 40%; }
 
 .social-links {
   display: flex;
   justify-content: space-around;
   padding-top: 10px; }
-  .social-links img {
+  .social-links .icon {
     width: 30px; }
 
-.loginSocialMsg {
+.login-social-msg {
   display: none; }
 
 .login-btn:hover {
@@ -137,9 +140,9 @@ input:-webkit-autofill {
 @media only screen and (min-width: 992px) {
   body {
     background-color: white; }
-  h2 {
+  .heading {
     font-size: 2rem; }
-  p {
+  .subtext {
     font-size: 1vw;
     width: 60%; }
   .whole-page {
@@ -155,32 +158,36 @@ input:-webkit-autofill {
     height: 75vh;
     display: flex;
     flex-direction: row; }
-    .main-container .form {
+  .form {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 20px; }
+    .form input {
+      height: 1.5vh;
+      margin-top: 0vh;
+      font-size: 1rem;
+      background-color: white;
+      border-radius: 0px;
+      outline: 0;
+      border-width: 0 0 1px;
+      border-color: black; }
+    .form .login-btn {
+      display: block;
       text-align: center;
-      margin: auto;
-      width: 80%;
-      display: flex;
-      flex-direction: column;
-      position: relative; }
-      .main-container .form input {
-        height: 1.5vh;
-        margin-top: 0vh;
-        font-size: 1rem;
-        background-color: white;
-        border-radius: 0px;
-        outline: 0;
-        border-width: 0 0 1px;
-        border-color: black; }
-      .main-container .form .login-btn {
-        display: block;
-        text-align: center;
-        width: 25%;
-        height: 4vh;
-        background-color: red;
-        color: white;
-        font-size: 10px;
-        position: relative;
-        z-index: 2; }
+      width: 25%;
+      height: 4vh;
+      background-color: red;
+      color: white;
+      font-size: 10px;
+      position: relative;
+      z-index: 2; }
+  .label-title {
+    display: inline;
+    text-align: left; }
   .form > input,
   button,
   select,
@@ -196,16 +203,16 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px white inset;
     color: black; }
   .form input::placeholder {
-    color: black; }
+    color: transparent; }
   input:-webkit-autofill {
     -webkit-text-fill-color: black !important; }
-  .banner {
+  .content {
     display: block;
     position: relative;
     text-align: center;
     color: white;
     width: 50%; }
-    .banner img {
+    .content img {
       width: 100%;
       height: 100%;
       -webkit-border-top-left-radius: 10px;
@@ -214,18 +221,18 @@ input:-webkit-autofill {
       -moz-border-radius-bottomleft: 10px;
       border-top-left-radius: 10px;
       border-bottom-left-radius: 10px; }
-  .banner_text {
+  .content-text {
     text-align: left;
     height: fit-content;
     position: absolute;
     top: 30%;
     left: 35%;
     transform: translate(-50%, -50%); }
-    .banner_text h1 {
+    .content-text h1 {
       font-size: 5rem;
       margin-top: 0px;
       margin-bottom: 0px; }
-    .banner_text p {
+    .content-text p {
       font-size: 1rem;
       position: relative;
       top: -10px; }
@@ -247,9 +254,9 @@ input:-webkit-autofill {
     margin: auto;
     position: relative;
     top: -10px; }
-    .header-text h2 {
+    .header-text .heading {
       font-size: 2rem; }
-    .header-text p {
+    .header-text .subtext {
       font-size: 1vw;
       width: 60%; }
   .terms-container {
@@ -260,7 +267,7 @@ input:-webkit-autofill {
     position: relative; }
     .terms-container input {
       margin-right: 3%; }
-  .footer .divider {
+  .social-container .divider {
     display: none; }
   .msg-icons {
     text-align: left;
@@ -268,19 +275,13 @@ input:-webkit-autofill {
     flex-direction: column;
     padding-bottom: 8%; }
     .msg-icons span {
-      position: relative;
-      left: 12%; }
-  .loginSocialMsg {
+      position: relative; }
+  .login-social-msg {
     display: flex;
-    left: 10%;
     z-index: 1; }
-  .btn_txt {
-    display: inline;
-    color: white;
-    font-size: 0.5rem; }
   .social-links {
     position: relative;
-    top: 10px; }
+    top: 3rem; }
     .social-links .social-btn {
       background-color: transparent;
       border: 0px;
