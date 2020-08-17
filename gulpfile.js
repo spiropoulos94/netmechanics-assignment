@@ -31,12 +31,7 @@ function watchChanges() {
 
 exports.watchChanges = watchChanges;
 
-//gulp.task("build", function() {
-//  gulp
-//    .src("index.html")
-//    .pipe(build({ title: "Some page" }))
-//    .pipe(gulp.dest("dist"));
-//});
+
 
 function build(done) {
   src("index.html")

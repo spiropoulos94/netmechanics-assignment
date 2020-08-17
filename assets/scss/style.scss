@@ -159,7 +159,7 @@ input:-webkit-autofill {
   display: none;
 }
 
-.login-btn:hover {
+.login-btn:hover, .login-btn:focus {
   cursor: pointer;
 }
 
@@ -228,29 +228,35 @@ input:-webkit-autofill {
     flex-direction: column;
     position: relative;
     bottom: 20px;
+  }
 
-    input {
-      height: 1.5vh;
-      margin-top: 0vh;
-      font-size: 1rem;
-      background-color: white;
-      border-radius: 0px;
-      outline: 0;
-      border-width: 0 0 1px;
-      border-color: black;
-    }
+  .data-input {
+    height: 1.5vh;
+    margin-top: 0vh;
+    font-size: 1rem;
+    background-color: white;
+    border-radius: 0px;
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: black;
 
-    .login-btn {
-      display: block;
-      text-align: center;
-      width: 25%;
-      height: 4vh;
-      background-color: red;
-      color: white;
-      font-size: 10px;
-      position: relative;
-      z-index: 2;
-    }
+  }
+
+  .form > input {
+  color: black;
+  outline: none;
+}
+
+  .login-btn {
+    display: block;
+    text-align: center;
+    width: 25%;
+    height: 4vh;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    position: relative;
+    z-index: 2;
   }
 
   
@@ -262,11 +268,12 @@ input:-webkit-autofill {
     
   }
 
-  .form > input,
-  button,
-  select,
-  textarea {
+  .form  {
     color: black;
+  }
+
+  .data-input {
+     color:black;
   }
 
   .login-container {
@@ -319,12 +326,12 @@ input:-webkit-autofill {
     left: 35%;
     transform: translate(-50%, -50%);
 
-    h1 {
+    .content-h1 {
       font-size: 5rem;
       margin-top: 0px;
       margin-bottom: 0px;
     }
-    p {
+    .content-p {
       font-size: 1rem;
       position: relative;
       top: -10px;
@@ -369,7 +376,7 @@ input:-webkit-autofill {
     justify-content: start;
     position: relative;
 
-    input {
+    .terms-input {
       margin-right: 3%;
     }
   }
@@ -417,7 +424,7 @@ input:-webkit-autofill {
       text-decoration: none;
     }
 
-    button:hover {
+    button:hover, button:focus {
       cursor: pointer;
     }
   }
@@ -427,11 +434,11 @@ input:-webkit-autofill {
     &.fb {
       background-color: #4267b2;
     }
-    &.twitter {
+    &.tw {
       background-color: #1da1f2;
     }
 
-    &.google-plus {
+    &.gp {
       background-color: #dd4b39;
     }
   }
