@@ -15,7 +15,8 @@ body {
     font-size: 0.8rem; }
 
 .content {
-  display: none; }
+  display: none;
+  min-width: 50%; }
   .content .landing-image {
     width: 100%; }
 
@@ -48,7 +49,6 @@ body {
   width: 95%;
   height: 5vh;
   padding: 5px;
-  margin-top: 1.5vh;
   border-radius: 50px;
   border-color: white;
   background-color: firebrick; }
@@ -133,7 +133,7 @@ input:-webkit-autofill {
     background-color: white; }
   .input-group {
     display: flex;
-    margin: 3vh 0px; }
+    margin: 1.1rem 0px; }
   .heading {
     font-size: 2rem; }
   .subtext {
@@ -152,18 +152,14 @@ input:-webkit-autofill {
     height: 75vh;
     display: flex;
     flex-direction: row;
-    min-height: 600px; }
+    min-height: 500px; }
   .form {
     text-align: center;
     margin: auto;
-    width: 80%;
     display: flex;
-    flex-direction: column;
-    position: relative;
-    bottom: 20px; }
+    flex-direction: column; }
   .data-input {
-    height: 1.5vh;
-    margin-top: 0vh;
+    height: 12px;
     font-size: 1rem;
     background-color: white;
     border-radius: 0px;
@@ -242,6 +238,7 @@ input:-webkit-autofill {
       top: -10px; }
   .landing-inputs {
     width: 50%;
+    max-width: 50%;
     background-color: white;
     height: 100%;
     -webkit-border-top-right-radius: 10px;
@@ -249,19 +246,17 @@ input:-webkit-autofill {
     -moz-border-radius-topright: 10px;
     -moz-border-radius-bottomright: 10px;
     border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px; }
+    border-bottom-right-radius: 10px;
+    padding: 0 3%; }
   .header-text {
     color: black !important;
     letter-spacing: 2px;
-    width: 80%;
     display: block;
-    margin: auto;
-    position: relative;
-    top: -10px; }
+    position: relative; }
     .header-text .heading {
       font-size: 2rem; }
     .header-text .subtext {
-      font-size: 1vw;
+      font-size: 15px;
       width: 60%; }
   .terms-container {
     color: black;
@@ -284,8 +279,9 @@ input:-webkit-autofill {
     display: flex;
     z-index: 1; }
   .social-links {
-    position: relative;
-    top: 3rem; }
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px; }
     .social-links .social-btn {
       background-color: transparent;
       border: 0px;
