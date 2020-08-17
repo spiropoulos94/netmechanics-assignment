@@ -51,7 +51,6 @@ body {
 
 .form {
   text-align: center;
-  //width: 100%;
 }
 
 .label-title {
@@ -100,10 +99,6 @@ body {
   top: 0.5rem;
 }
 
-.divider {
-  //color: white;
-}
-
 /* Changing AutoFill Background Color and Text Color */
 
 input:-webkit-autofill,
@@ -111,7 +106,6 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   box-shadow: 0 0 0 30px firebrick inset;
-  //color: white;
 }
 
 input:-webkit-autofill {
@@ -220,6 +214,12 @@ input:-webkit-autofill {
   .data-input::placeholder {
     color: black;
   }
+
+  .data-input:focus,
+  .data-input:active {
+    border-color: red;
+  }
+
   .form > input {
     color: black;
     outline: none;
@@ -230,7 +230,7 @@ input:-webkit-autofill {
     width: 25%;
     height: 22px;
     background-color: red;
-    //color: white;
+    color: white; // i left the white color there because it couldn't be inherited
     font-size: 10px;
     position: relative;
     z-index: 2;
@@ -271,7 +271,6 @@ input:-webkit-autofill {
     display: block;
     position: relative;
     text-align: center;
-    //color: white;
     width: 50%;
     .landing-image {
       width: 100%;
