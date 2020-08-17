@@ -126,7 +126,8 @@ input:-webkit-autofill {
 .login-social-msg {
   display: none; }
 
-.login-btn:hover, .login-btn:focus {
+.login-btn:hover,
+.login-btn:focus {
   cursor: pointer; }
 
 .social-links .social-btn {
@@ -138,6 +139,9 @@ input:-webkit-autofill {
 @media only screen and (min-width: 992px) {
   body {
     background-color: white; }
+  .input-group {
+    display: flex;
+    margin: 3vh 0px; }
   .heading {
     font-size: 2rem; }
   .subtext {
@@ -188,7 +192,9 @@ input:-webkit-autofill {
     z-index: 2; }
   .label-title {
     display: inline;
-    text-align: left; }
+    text-align: left;
+    width: 5rem;
+    border-bottom: 1px solid black; }
   .form {
     color: black; }
   .data-input {
@@ -294,7 +300,8 @@ input:-webkit-autofill {
         display: block;
         width: 50%;
         font-size: 9px; }
-    .social-links button:hover, .social-links button:focus {
+    .social-links button:hover,
+    .social-links button:focus {
       cursor: pointer; }
   .social-btn {
     color: white; }
