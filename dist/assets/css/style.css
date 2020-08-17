@@ -47,15 +47,11 @@ body {
 .login-btn {
   width: 95%;
   height: 5vh;
-  margin: 0;
   padding: 5px;
   margin-top: 1.5vh;
   border-radius: 50px;
-  border-radius: 50px;
-  border-radius: 50px;
   border-color: white;
-  background-color: firebrick;
-  font-size: 1rem; }
+  background-color: firebrick; }
 
 .login-btn {
   width: 100%;
@@ -90,13 +86,6 @@ body {
 
 .divider {
   color: white; }
-
-.form > .data-input,
-button,
-select,
-textarea {
-  color: white;
-  outline: none; }
 
 /* Changing AutoFill Background Color and Text Color */
 input:-webkit-autofill,
@@ -162,7 +151,8 @@ input:-webkit-autofill {
     max-width: none;
     height: 75vh;
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    min-height: 600px; }
   .form {
     text-align: center;
     margin: auto;

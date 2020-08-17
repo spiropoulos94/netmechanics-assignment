@@ -1,3 +1,6 @@
+// TODO REVIEW vh and vw units 
+//TODO color in body tag
+// TODO border focus state
 $pageColor: firebrick;
 $inputSize: 5vh;
 body {
@@ -60,15 +63,11 @@ body {
 .login-btn {
     width: 95%;
     height: $inputSize;
-    margin: 0;
     padding: 5px;
     margin-top: 1.5vh;
     border-radius: 50px;
-    border-radius: 50px;
-    border-radius: 50px;
     border-color: white;
     background-color: $pageColor;
-    font-size: 1rem;
 }
 
 .login-btn {
@@ -108,15 +107,6 @@ body {
 
 .divider {
     color: white;
-}
-
-//removing outline when input is on focus
-.form>.data-input,
-button,
-select,
-textarea {
-    color: white;
-    outline: none;
 }
 
 
@@ -207,6 +197,7 @@ input:-webkit-autofill {
         height: 75vh;
         display: flex;
         flex-direction: row;
+        min-height: 600px;
     }
     .form {
         text-align: center;
@@ -218,7 +209,7 @@ input:-webkit-autofill {
         bottom: 20px;
     }
     .data-input {
-        height: 1.5vh;
+        height: 1.5vh; // TODO set height in pixels
         margin-top: 0vh;
         font-size: 1rem;
         background-color: white;
@@ -315,6 +306,7 @@ input:-webkit-autofill {
         }
     }
     .landing-inputs {
+        //TODO set padding, remove width and margin from children
         width: 50%;
         background-color: white;
         height: 100%;
