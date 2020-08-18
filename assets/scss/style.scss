@@ -164,7 +164,7 @@ input:-webkit-autofill {
     outline: none;
   }
   .input-group {
-    margin: 14px 0px;
+    margin: 1vh 0px;
   }
   .heading {
     font-size: 2rem;
@@ -192,10 +192,10 @@ input:-webkit-autofill {
   .main-container {
     width: 75vw;
     max-width: none;
-    height: 75vh;
+    height: 85vh; //changed it to fit better shorter desktop screens. For example it would previously break on a 1024 x 768.
     //display: flex;
     flex-direction: row;
-    min-height: 500px;
+    min-height: 550px;
     margin: auto;
   }
   .form {
@@ -231,7 +231,7 @@ input:-webkit-autofill {
     position: relative;
     z-index: 2;
     border-color: currentColor;
-    margin: 40px 0;
+    margin: 1vh 0;
     &:hover {
       box-shadow: gray;
     }
@@ -268,7 +268,7 @@ input:-webkit-autofill {
     display: block;
     position: relative;
     text-align: center;
-    //color: white;
+
     width: 50%;
   }
   .landing-image {
@@ -296,8 +296,6 @@ input:-webkit-autofill {
   }
   .content-p {
     font-size: 1rem;
-    position: relative;
-    top: -10px;
   }
   .landing-inputs {
     //TODO set padding, remove width and margin from children

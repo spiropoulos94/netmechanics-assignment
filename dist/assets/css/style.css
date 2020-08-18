@@ -118,7 +118,7 @@ input:-webkit-autofill {
     color: black;
     outline: none; }
   .input-group {
-    margin: 14px 0px; }
+    margin: 1vh 0px; }
   .heading {
     font-size: 2rem; }
   .whole-page {
@@ -131,9 +131,9 @@ input:-webkit-autofill {
   .main-container {
     width: 75vw;
     max-width: none;
-    height: 75vh;
+    height: 85vh;
     flex-direction: row;
-    min-height: 500px;
+    min-height: 550px;
     margin: auto; }
   .form {
     text-align: center; }
@@ -161,7 +161,7 @@ input:-webkit-autofill {
     position: relative;
     z-index: 2;
     border-color: currentColor;
-    margin: 40px 0; }
+    margin: 1vh 0; }
     .login-btn:hover {
       box-shadow: gray; }
   .label-title {
@@ -210,9 +210,7 @@ input:-webkit-autofill {
     margin-top: 0px;
     margin-bottom: 0px; }
   .content-p {
-    font-size: 1rem;
-    position: relative;
-    top: -10px; }
+    font-size: 1rem; }
   .landing-inputs {
     width: 50%;
     max-width: 50%;
