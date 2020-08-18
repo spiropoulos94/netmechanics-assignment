@@ -230,8 +230,9 @@ input:-webkit-autofill {
     z-index: 2;
     border-color: currentColor;
     margin: 1vh 0;
+    border: 1px solid red;
     &:hover {
-      box-shadow: -3px 9px 49px -6px rgba(0, 0, 0, 0.75);
+      box-shadow: -3px 9px 19px -3px rgba(0, 0, 0, 0.75);
     }
   }
   .label-title {
@@ -297,14 +298,14 @@ input:-webkit-autofill {
   }
   .landing-inputs {
     //TODO set padding, remove width and margin from children
-    width: 50%;
-    max-width: 50%;
+    //width: 50%;
+    //max-width: 50%;
     background-color: white;
-    max-height: 100%;
-    -webkit-border-top-right-radius: 10px;
-    -webkit-border-bottom-right-radius: 10px;
-    -moz-border-radius-topright: 10px;
-    -moz-border-radius-bottomright: 10px;
+    //max-height: 100%;
+    // -webkit-border-top-right-radius: 10px;
+    // -webkit-border-bottom-right-radius: 10px;
+    // -moz-border-radius-topright: 10px;
+    // -moz-border-radius-bottomright: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
   }

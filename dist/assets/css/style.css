@@ -161,9 +161,10 @@ input:-webkit-autofill {
     position: relative;
     z-index: 2;
     border-color: currentColor;
-    margin: 1vh 0; }
+    margin: 1vh 0;
+    border: 1px solid red; }
     .login-btn:hover {
-      box-shadow: -3px 9px 49px -6px rgba(0, 0, 0, 0.75); }
+      box-shadow: -3px 9px 19px -3px rgba(0, 0, 0, 0.75); }
   .label-title {
     display: inline;
     text-align: left;
@@ -212,14 +213,7 @@ input:-webkit-autofill {
   .content-p {
     font-size: 1rem; }
   .landing-inputs {
-    width: 50%;
-    max-width: 50%;
     background-color: white;
-    max-height: 100%;
-    -webkit-border-top-right-radius: 10px;
-    -webkit-border-bottom-right-radius: 10px;
-    -moz-border-radius-topright: 10px;
-    -moz-border-radius-bottomright: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px; }
   .header-text {
