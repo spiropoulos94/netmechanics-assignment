@@ -261,7 +261,7 @@ button:focus {
     color: white; }
     .social-btn .text {
       display: block;
-      font-size: x-small; }
+      font-size: 10px; }
   button:hover,
   button:focus {
     cursor: pointer; }
