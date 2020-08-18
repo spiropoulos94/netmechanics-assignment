@@ -3,6 +3,7 @@
 // TODO border focus state
 $pageColor: firebrick;
 $inputSize: 3rem;
+$inputSizeDESKTOP: 1.5rem;
 body {
     background-color: $pageColor;
     margin: 0px;
@@ -10,8 +11,17 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+button:hover,
+button:focus {
+    cursor: pointer;
+}
+
 .flex-element {
     display: flex;
+}
+
+.whole-page {
+    display: block;
 }
 
 .header-text {
@@ -54,8 +64,8 @@ body {
 
 .data-input {
     width: 100%;
+    //padding: 5px;
     height: $inputSize;
-    padding: 5px;
     margin: 5px;
     border-radius: 50px;
     border-color: white;
@@ -81,11 +91,6 @@ body {
     height: auto;
 }
 
-//.data-input:focus,
-//.data-input,
-//.data-input::placeholder {
-//    outline: none;
-//}
 .terms-container {
     color: white;
     font-size: 10px;
@@ -95,6 +100,7 @@ body {
 }
 
 .data-input {
+    &,
     &:focus,
     &::placeholder {
         color: white;
@@ -138,15 +144,6 @@ input:-webkit-autofill {
     }
 }
 
-.login-social-msg {
-    display: none;
-}
-
-button:hover,
-button:focus {
-    cursor: pointer;
-}
-
 .social-btn {
     background-color: transparent;
     border: 0px;
@@ -155,9 +152,20 @@ button:focus {
     }
 }
 
+@media only screen and (max-width: 991px) {
+    .login-social-msg {
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 992px) {
     body {
         background-color: white;
+    }
+    input {
+        // this is targeting only this forms inputs.
+        color: black;
+        outline: none;
     }
     .input-group {
         margin: 14px 0px;
@@ -182,55 +190,51 @@ button:focus {
         width: 75vw;
         max-width: none;
         height: 75vh;
-        display: flex;
+        //display: flex;
         flex-direction: row;
         min-height: 500px;
         margin: auto;
     }
     .form {
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        //display: flex;
+        //flex-direction: column;
+        //justify-content: center;
     }
-    //edw ola mazi
     .data-input {
-        height: 1.1rem;
         font-size: 1.1rem;
+        height: $inputSizeDESKTOP;
         background-color: white;
         border-radius: 0px;
         outline: 0;
         border-width: 0 0 1px 0;
         border-color: black;
         margin: 0;
+        color: black;
         &:focus,
         &::placeholder {
             color: black;
             border-color: red;
         }
     }
-    .form>input {
-        // this is targeting only this forms inputs.
-        color: black;
-        outline: none;
-    }
     .login-btn {
         display: block;
         text-align: center;
-        width: 25%;
-        height: 22px;
+        width: 160px;
+        height: 35px;
         background-color: red;
         color: white;
-        font-size: 10px;
+        font-size: 14px;
         position: relative;
         z-index: 2;
         border-color: currentColor;
+        margin: 40px 0;
     }
     .label-title {
         display: inline;
         text-align: left;
         width: 5rem;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid currentColor;
         font-size: 1.1rem;
     }
     .form {
@@ -244,7 +248,7 @@ button:focus {
     input:-webkit-autofill:focus,
     input:-webkit-autofill:active {
         -webkit-box-shadow: 0 0 0 30px white inset;
-        color: black;
+        color: white
     }
     .form {
         input::placeholder {
@@ -328,11 +332,6 @@ button:focus {
     }
     .msg-icons {
         text-align: left;
-        display: flex;
-        flex-direction: column;
-    }
-    .login-social-msg {
-        z-index: 1;
     }
     .social-links {
         justify-content: space-around;
@@ -350,10 +349,6 @@ button:focus {
             display: block;
             font-size: 10px;
         }
-    }
-    button:hover,
-    button:focus {
-        cursor: pointer;
     }
     .social-btn {
         color: white;

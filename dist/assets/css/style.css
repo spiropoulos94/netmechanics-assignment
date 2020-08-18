@@ -4,8 +4,15 @@ body {
   color: white;
   font-family: 'Roboto', sans-serif; }
 
+button:hover,
+button:focus {
+  cursor: pointer; }
+
 .flex-element {
   display: flex; }
+
+.whole-page {
+  display: block; }
 
 .header-text {
   letter-spacing: 2px;
@@ -38,7 +45,6 @@ body {
 .data-input {
   width: 100%;
   height: 3rem;
-  padding: 5px;
   margin: 5px;
   border-radius: 50px;
   border-color: white;
@@ -68,7 +74,7 @@ body {
   left: 2px;
   top: 0.5rem; }
 
-.data-input:focus, .data-input::placeholder {
+.data-input, .data-input:focus, .data-input::placeholder {
   color: white; }
 
 /* Changing AutoFill Background Color and Text Color */
@@ -96,22 +102,22 @@ input:-webkit-autofill {
   .social-links .icon {
     width: 30px; }
 
-.login-social-msg {
-  display: none; }
-
-button:hover,
-button:focus {
-  cursor: pointer; }
-
 .social-btn {
   background-color: transparent;
   border: 0px; }
   .social-btn .text {
     display: none; }
 
+@media only screen and (max-width: 991px) {
+  .login-social-msg {
+    display: none; } }
+
 @media only screen and (min-width: 992px) {
   body {
     background-color: white; }
+  input {
+    color: black;
+    outline: none; }
   .input-group {
     margin: 14px 0px; }
   .heading {
@@ -130,46 +136,41 @@ button:focus {
     width: 75vw;
     max-width: none;
     height: 75vh;
-    display: flex;
     flex-direction: row;
     min-height: 500px;
     margin: auto; }
   .form {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
+    text-align: center; }
   .data-input {
-    height: 1.1rem;
     font-size: 1.1rem;
+    height: 1.5rem;
     background-color: white;
     border-radius: 0px;
     outline: 0;
     border-width: 0 0 1px 0;
     border-color: black;
-    margin: 0; }
+    margin: 0;
+    color: black; }
     .data-input:focus, .data-input::placeholder {
       color: black;
       border-color: red; }
-  .form > input {
-    color: black;
-    outline: none; }
   .login-btn {
     display: block;
     text-align: center;
-    width: 25%;
-    height: 22px;
+    width: 160px;
+    height: 35px;
     background-color: red;
     color: white;
-    font-size: 10px;
+    font-size: 14px;
     position: relative;
     z-index: 2;
-    border-color: currentColor; }
+    border-color: currentColor;
+    margin: 40px 0; }
   .label-title {
     display: inline;
     text-align: left;
     width: 5rem;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid currentColor;
     font-size: 1.1rem; }
   .form {
     color: black; }
@@ -180,7 +181,7 @@ button:focus {
   input:-webkit-autofill:focus,
   input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px white inset;
-    color: black; }
+    color: white; }
   .form input::placeholder {
     color: transparent; }
   input:-webkit-autofill {
@@ -244,11 +245,7 @@ button:focus {
   .divider {
     display: none; }
   .msg-icons {
-    text-align: left;
-    display: flex;
-    flex-direction: column; }
-  .login-social-msg {
-    z-index: 1; }
+    text-align: left; }
   .social-links {
     justify-content: space-around;
     margin-top: 20px; }
@@ -262,9 +259,6 @@ button:focus {
     .social-btn .text {
       display: block;
       font-size: 10px; }
-  button:hover,
-  button:focus {
-    cursor: pointer; }
   .social-btn {
     color: white; }
     .social-btn.fb {
