@@ -40,8 +40,7 @@ body {
   margin: 5px;
   border-radius: 50px;
   border-color: white;
-  background-color: firebrick;
-  color: white; }
+  background-color: firebrick; }
 
 .login-btn {
   width: 100%;
@@ -71,10 +70,10 @@ body {
   color: white; }
 
 /* Changing AutoFill Background Color and Text Color */
-input,
-input:hover,
-input:focus,
-input:active {
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
   box-shadow: 0 0 0 30px firebrick inset; }
 
 input:-webkit-autofill {
@@ -270,10 +269,9 @@ input:-webkit-autofill {
     border-radius: 30px;
     width: 7vw;
     color: white; }
-  .text {
-    display: block;
-    width: 50%;
-    font-size: 9px; }
+    .social-btn .text {
+      display: block;
+      font-size: x-small; }
   button:hover,
   button:focus {
     cursor: pointer; }
