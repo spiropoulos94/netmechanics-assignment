@@ -102,12 +102,17 @@ body {
 
 /* Changing AutoFill Background Color and Text Color */
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-    box-shadow: 0 0 0 30px $pageColor inset;
-    //color: white;
+//input,
+//input:hover,
+//input:focus,
+//input:active {
+//    box-shadow: 0 0 0 30px $pageColor inset;
+//    //color: white;
+//}
+input {
+    &:hover &:focus &:active {
+        box-shadow: 0 0 0 30px $pageColor inset;
+    }
 }
 
 input:-webkit-autofill {
