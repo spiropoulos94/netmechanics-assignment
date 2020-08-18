@@ -1,354 +1,381 @@
-                                              // TODO REVIEW vh and vw units
-                                          //TODO color in body tag
-                                          // TODO border focus state
-                                          $pageColor: firebrick;
-                                          $inputSize: 3rem;
-                                          body {
-                                              background-color: $pageColor;
-                                              margin: 0px;
-                                              color: white;
-                                              font-family: 'Roboto';
-                                              .header-text {
-                                                  text-align: left;
-                                                  letter-spacing: 2px;
-                                                  margin-bottom: 10%;
-                                              }
-                                              .heading {
-                                                  font-size: 2rem;
-                                              }
-                                              .subtext {
-                                                  margin-top: -1rem;
-                                                  font-size: 0.8rem;
-                                              }
-                                              .content {
-                                                  display: none;
-                                                  min-width: 50%;
-                                              }
-                                              .landing-image {
-                                                  width: 100%;
-                                              }
-                                              .register-link {
-                                                  text-decoration: none;
-                                              }
-                                              //.main-container {
-                                              //    margin: auto;
-                                              //    max-width: 60vw;
-                                              //}
-                                              .form {
-                                                  text-align: center;
-                                              }
-                                              .label-title {
-                                                  display: none;
-                                              }
-                                              .data-input {
-                                                  width: 100%;
-                                                  height: $inputSize;
-                                                  padding: 5px;
-                                                  margin: 5px;
-                                                  border-radius: 50px;
-                                                  border-color: white;
-                                                  background-color: $pageColor;
-                                              }
-                                              .login-btn {
-                                                  width: 100%;
-                                                  border-radius: 50px;
-                                                  color: red;
-                                                  background-color: white;
-                                                  font-weight: bold;
-                                                  letter-spacing: 1px;
-                                                  padding: 5px;
-                                                  font-size: 1rem;
-                                                  height: 44.4px;
-                                                  color: red;
-                                              }
-                                              #terms {
-                                                  width: auto;
-                                                  height: auto;
-                                              }
-                                              //.data-input:focus,
-                                              //.data-input,
-                                              //.data-input::placeholder {
-                                              //    outline: none;
-                                              //}
-                                              .terms-container {
-                                                  color: white;
-                                                  font-size: 10px;
-                                                  position: relative;
-                                                  left: 2px;
-                                                  top: 0.5rem;
-                                              }
-                                              .divider {
-                                                  //color: white;
-                                              }
-                                              /* Changing AutoFill Background Color and Text Color */
-                                              input:-webkit-autofill,
-                                              input:-webkit-autofill:hover,
-                                              input:-webkit-autofill:focus,
-                                              input:-webkit-autofill:active {
-                                                  box-shadow: 0 0 0 30px firebrick inset;
-                                                  //color: white;
-                                              }
-                                              input:-webkit-autofill {
-                                                  -webkit-text-fill-color: white;
-                                              }
-                                              .footer {
-                                                  .icon {
-                                                      width: 16px;
-                                                      height: 16px;
-                                                  }
-                                              }
-                                              .social-container .divider {
-                                                  margin-top: 15%;
-                                                  display: flex;
-                                                  hr {
-                                                      width: 40%;
-                                                  }
-                                              }
-                                              .social-links {
-                                                  display: flex;
-                                                  justify-content: space-around;
-                                                  padding-top: 10px;
-                                                  .icon {
-                                                      width: 30px;
-                                                  }
-                                              }
-                                              .login-social-msg {
-                                                  display: none;
-                                              }
-                                              .login-btn:hover,
-                                              .login-btn:focus {
-                                                  cursor: pointer;
-                                              }
-                                              .social-btn {
-                                                  background-color: transparent;
-                                                  border: 0px;
-                                                  .text {
-                                                      display: none;
-                                                  }
-                                              }
-                                              @media only screen and (min-width: 992px) {
-                                                  body {
-                                                      background-color: white;
-                                                  }
-                                                  .input-group {
-                                                      display: flex;
-                                                      margin: 14px 0px;
-                                                  }
-                                                  .heading {
-                                                      font-size: 2rem;
-                                                  }
-                                                  .subtext {
-                                                      font-size: 1vw;
-                                                      width: 60%;
-                                                  }
-                                                  .whole-page {
-                                                      display: flex;
-                                                      justify-content: center;
-                                                      height: 100vh;
-                                                      background-image: linear-gradient( to right bottom, #f2c42f, #ffa034, #ff7b49, #ff5861, #ea3c7b);
-                                                  }
-                                                  .register-link {
-                                                      color: blue;
-                                                  }
-                                                  .main-container {
-                                                      width: 75vw;
-                                                      max-width: none;
-                                                      height: 75vh;
-                                                      display: flex;
-                                                      flex-direction: row;
-                                                      min-height: 500px;
-                                                  }
-                                                  .form {
-                                                      text-align: center;
-                                                      display: flex;
-                                                      flex-direction: column;
-                                                  }
-                                                  .data-input {
-                                                      height: 12px;
-                                                      font-size: 1rem;
-                                                      background-color: white;
-                                                      border-radius: 0px;
-                                                      outline: 0;
-                                                      border-width: 0 0 1px;
-                                                      border-color: black;
-                                                      margin: 0;
-                                                  }
-                                                  .data-input:focus,
-                                                  .data-input,
-                                                  .data-input::placeholder {
-                                                      color: black;
-                                                  }
-                                                  .data-input:focus {
-                                                      border-color: red;
-                                                  }
-                                                  .form>input {
-                                                      color: black;
-                                                      outline: none;
-                                                  }
-                                                  .login-btn {
-                                                      display: block;
-                                                      text-align: center;
-                                                      width: 25%;
-                                                      height: 22px;
-                                                      background-color: red;
-                                                      color: white;
-                                                      font-size: 10px;
-                                                      position: relative;
-                                                      z-index: 2;
-                                                  }
-                                                  .label-title {
-                                                      display: inline;
-                                                      text-align: left;
-                                                      width: 5rem;
-                                                      border-bottom: 1px solid black;
-                                                      font-size: 1.2rem;
-                                                  }
-                                                  .form {
-                                                      color: black;
-                                                  }
-                                                  .data-input {
-                                                      color: black;
-                                                  }
-                                                  .login-container {
-                                                      display: flex;
-                                                      justify-content: flex-end;
-                                                  }
-                                                  input:-webkit-autofill,
-                                                  input:-webkit-autofill:hover,
-                                                  input:-webkit-autofill:focus,
-                                                  input:-webkit-autofill:active {
-                                                      -webkit-box-shadow: 0 0 0 30px white inset;
-                                                      color: black;
-                                                  }
-                                                  .form {
-                                                      input::placeholder {
-                                                          color: transparent;
-                                                      }
-                                                  }
-                                                  input:-webkit-autofill {
-                                                      -webkit-text-fill-color: black !important;
-                                                  }
-                                                  .content {
-                                                      display: block;
-                                                      position: relative;
-                                                      text-align: center;
-                                                      //color: white;
-                                                      width: 50%;
-                                                  }
-                                                  .landing-image {
-                                                      width: 100%;
-                                                      height: 100%;
-                                                      -webkit-border-top-left-radius: 10px;
-                                                      -webkit-border-bottom-left-radius: 10px;
-                                                      -moz-border-radius-topleft: 10px;
-                                                      -moz-border-radius-bottomleft: 10px;
-                                                      border-top-left-radius: 10px;
-                                                      border-bottom-left-radius: 10px;
-                                                  }
-                                                  .content-text {
-                                                      text-align: left;
-                                                      height: fit-content;
-                                                      position: absolute;
-                                                      top: 30%;
-                                                      left: 35%;
-                                                      transform: translate(-50%, -50%);
-                                                  }
-                                                  .content-h1 {
-                                                      font-size: 5rem;
-                                                      margin-top: 0px;
-                                                      margin-bottom: 0px;
-                                                  }
-                                                  .content-p {
-                                                      font-size: 1rem;
-                                                      position: relative;
-                                                      top: -10px;
-                                                  }
-                                                  .landing-inputs {
-                                                      //TODO set padding, remove width and margin from children
-                                                      width: 50%;
-                                                      max-width: 50%;
-                                                      background-color: white;
-                                                      height: 100%;
-                                                      -webkit-border-top-right-radius: 10px;
-                                                      -webkit-border-bottom-right-radius: 10px;
-                                                      -moz-border-radius-topright: 10px;
-                                                      -moz-border-radius-bottomright: 10px;
-                                                      border-top-right-radius: 10px;
-                                                      border-bottom-right-radius: 10px;
-                                                      padding: 0 6%;
-                                                  }
-                                                  .header-text {
-                                                      color: black !important; // I used !important here because this header continues to inherit the white colour from the mobile design.
-                                                      letter-spacing: 2px;
-                                                      display: block;
-                                                      .heading {
-                                                          font-size: 2rem;
-                                                      }
-                                                      .subtext {
-                                                          font-size: 15px;
-                                                          width: 60%;
-                                                      }
-                                                  }
-                                                  .terms-container {
-                                                      color: black;
-                                                      font-size: 14px;
-                                                      display: flex;
-                                                      justify-content: start;
-                                                      position: relative;
-                                                      .terms-input {
-                                                          margin-right: 3%;
-                                                      }
-                                                  }
-                                                  .divider {
-                                                      display: none;
-                                                  }
-                                                  .msg-icons {
-                                                      text-align: left;
-                                                      display: flex;
-                                                      flex-direction: column;
-                                                      .text {
-                                                          position: relative;
-                                                      }
-                                                  }
-                                                  .login-social-msg {
-                                                      display: flex;
-                                                      z-index: 1;
-                                                  }
-                                                  .social-links {
-                                                      display: flex;
-                                                      justify-content: space-around;
-                                                      margin-top: 20px;
-                                                  }
-                                                  .social-btn {
-                                                      background-color: transparent;
-                                                      border: 0px;
-                                                      display: flex;
-                                                      align-items: center;
-                                                      border-radius: 30px;
-                                                      width: 7vw;
-                                                      color: white;
-                                                      .text {
-                                                          display: block;
-                                                          width: 50%;
-                                                          font-size: 9px;
-                                                      }
-                                                  }
-                                                  .social-btn {
-                                                      color: white;
-                                                      &.fb {
-                                                          background-color: #4267b2;
-                                                      }
-                                                      &.tw {
-                                                          background-color: #1da1f2;
-                                                      }
-                                                      &.gp {
-                                                          background-color: #dd4b39;
-                                                      }
-                                                  }
-                                              }
-                                              .data-input {
-                                                  &:focus,
-                                                  &::placeholder {
-                                                      color: black;
-                                                  }
-                                              }
+// TODO REVIEW vh and vw units
+//TODO color in body tag
+// TODO border focus state
+$pageColor: firebrick;
+$inputSize: 3rem;
+body {
+    background-color: $pageColor;
+    margin: 0px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-text {
+    text-align: left;
+    letter-spacing: 2px;
+    margin-bottom: 10%;
+    .heading {
+        font-size: 2rem;
+    }
+    .subtext {
+        margin-top: -1rem;
+        font-size: 0.8rem;
+    }
+}
+
+.content {
+    display: none;
+    min-width: 50%;
+    .landing-image {
+        width: 100%;
+    }
+}
+
+.register-link {
+    text-decoration: none;
+}
+
+.landing-inputs {
+    margin: auto;
+    max-width: 60vw;
+}
+
+.form {
+    text-align: center;
+    //width: 100%;
+}
+
+.label-title {
+    display: none;
+}
+
+.data-input {
+    width: 100%;
+    height: $inputSize;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 50px;
+    border-color: white;
+    background-color: $pageColor;
+    color: white
+}
+
+.login-btn {
+    width: 100%;
+    border-radius: 50px;
+    color: red;
+    background-color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 5px;
+    font-size: 1rem;
+    height: 44.4px;
+    color: red;
+    border-color: currentColor;
+}
+
+#terms {
+    width: auto;
+    height: auto;
+}
+
+//.data-input:focus,
+//.data-input,
+//.data-input::placeholder {
+//    outline: none;
+//}
+.terms-container {
+    color: white;
+    font-size: 10px;
+    position: relative;
+    left: 2px;
+    top: 0.5rem;
+}
+
+.data-input {
+    &:focus,
+    &::placeholder {
+        color: white;
+    }
+}
+
+
+/* Changing AutoFill Background Color and Text Color */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    box-shadow: 0 0 0 30px $pageColor inset;
+    //color: white;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: white;
+}
+
+.footer {
+    .icon {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.social-container .divider {
+    margin-top: 15%;
+    display: flex;
+    hr {
+        width: 40%;
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    .icon {
+        width: 30px;
+    }
+}
+
+.login-social-msg {
+    display: none;
+}
+
+.login-btn:hover,
+.login-btn:focus {
+    cursor: pointer;
+}
+
+.social-btn {
+    background-color: transparent;
+    border: 0px;
+    .text {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        background-color: white;
+    }
+    .input-group {
+        display: flex;
+        margin: 14px 0px;
+    }
+    .heading {
+        font-size: 2rem;
+    }
+    .subtext {
+        font-size: 1vw;
+        width: 60%;
+    }
+    .whole-page {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        background-image: linear-gradient( to right bottom, #f2c42f, #ffa034, #ff7b49, #ff5861, #ea3c7b);
+    }
+    .register-link {
+        color: blue;
+    }
+    .main-container {
+        width: 75vw;
+        max-width: none;
+        height: 75vh;
+        display: flex;
+        flex-direction: row;
+        min-height: 500px;
+        margin: auto;
+    }
+    .form {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    //edw ola mazi
+    .data-input {
+        height: 12px;
+        font-size: 1rem;
+        background-color: white;
+        border-radius: 0px;
+        outline: 0;
+        border-width: 0 0 1px 0;
+        border-color: black;
+        margin: 0;
+        &:focus,
+        &::placeholder {
+            color: black;
+            border-color: red;
+        }
+    }
+    .form>input {
+        color: black;
+        outline: none;
+    }
+    .login-btn {
+        display: block;
+        text-align: center;
+        width: 25%;
+        height: 22px;
+        background-color: red;
+        color: white;
+        font-size: 10px;
+        position: relative;
+        z-index: 2;
+        border-color: currentColor;
+    }
+    .label-title {
+        display: inline;
+        text-align: left;
+        width: 5rem;
+        border-bottom: 1px solid black;
+        font-size: 1.1rem;
+    }
+    .form {
+        color: black;
+    }
+    .data-input {
+        color: black;
+    }
+    .login-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px white inset;
+        color: black;
+    }
+    .form {
+        input::placeholder {
+            color: transparent;
+        }
+    }
+    input:-webkit-autofill {
+        -webkit-text-fill-color: black !important;
+    }
+    .content {
+        display: block;
+        position: relative;
+        text-align: center;
+        //color: white;
+        width: 50%;
+    }
+    .landing-image {
+        width: 100%;
+        height: 100%;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-bottom-left-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .content-text {
+        text-align: left;
+        height: fit-content;
+        position: absolute;
+        top: 30%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+    }
+    .content-h1 {
+        font-size: 5rem;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .content-p {
+        font-size: 1rem;
+        position: relative;
+        top: -10px;
+    }
+    .landing-inputs {
+        //TODO set padding, remove width and margin from children
+        width: 50%;
+        max-width: 50%;
+        background-color: white;
+        height: 100%;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 0 6%;
+    }
+    .header-text {
+        color: black !important; // I used !important here because this header continues to inherit the white colour from the mobile design.
+        letter-spacing: 2px;
+        display: block;
+        .heading {
+            font-size: 2rem;
+        }
+        .subtext {
+            font-size: 15px;
+            width: 60%;
+        }
+    }
+    .terms-container {
+        color: black;
+        font-size: 14px;
+        display: flex;
+        justify-content: start;
+        position: relative;
+        .terms-input {
+            margin-right: 3%;
+        }
+    }
+    .social-container .divider {
+        display: none;
+    }
+    .msg-icons {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        span {
+            position: relative;
+        }
+    }
+    .login-social-msg {
+        display: flex;
+        z-index: 1;
+    }
+    .social-links {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .social-btn {
+        background-color: transparent;
+        border: 0px;
+        display: flex;
+        align-items: center;
+        border-radius: 30px;
+        width: 7vw;
+        color: white;
+    }
+    .text {
+        display: block;
+        width: 50%;
+        font-size: 9px;
+    }
+    button:hover,
+    button:focus {
+        cursor: pointer;
+    }
+    .social-btn {
+        color: white;
+        &.fb {
+            background-color: #4267b2;
+        }
+        &.tw {
+            background-color: #1da1f2;
+        }
+        &.gp {
+            background-color: #dd4b39;
+        }
+    }
+}

@@ -1,7 +1,8 @@
 body {
   background-color: firebrick;
   margin: 0px;
-  color: white; }
+  color: white;
+  font-family: 'Roboto', sans-serif; }
 
 .header-text {
   text-align: left;
@@ -22,7 +23,7 @@ body {
 .register-link {
   text-decoration: none; }
 
-.main-container {
+.landing-inputs {
   margin: auto;
   max-width: 60vw; }
 
@@ -32,15 +33,15 @@ body {
 .label-title {
   display: none; }
 
-.data-input,
-.login-btn {
+.data-input {
   width: 100%;
   height: 3rem;
   padding: 5px;
   margin: 5px;
   border-radius: 50px;
   border-color: white;
-  background-color: firebrick; }
+  background-color: firebrick;
+  color: white; }
 
 .login-btn {
   width: 100%;
@@ -52,7 +53,8 @@ body {
   padding: 5px;
   font-size: 1rem;
   height: 44.4px;
-  color: red; }
+  color: red;
+  border-color: currentColor; }
 
 #terms {
   width: auto;
@@ -64,6 +66,9 @@ body {
   position: relative;
   left: 2px;
   top: 0.5rem; }
+
+.data-input:focus, .data-input::placeholder {
+  color: white; }
 
 /* Changing AutoFill Background Color and Text Color */
 input:-webkit-autofill,
@@ -99,10 +104,10 @@ input:-webkit-autofill {
 .login-btn:focus {
   cursor: pointer; }
 
-.social-links .social-btn {
+.social-btn {
   background-color: transparent;
   border: 0px; }
-  .social-links .social-btn .text {
+  .social-btn .text {
     display: none; }
 
 @media only screen and (min-width: 992px) {
@@ -121,7 +126,7 @@ input:-webkit-autofill {
     justify-content: center;
     height: 100vh;
     background-image: linear-gradient(to right bottom, #f2c42f, #ffa034, #ff7b49, #ff5861, #ea3c7b); }
-  .landing-inputs .header-text .register-link {
+  .register-link {
     color: blue; }
   .main-container {
     width: 75vw;
@@ -129,7 +134,8 @@ input:-webkit-autofill {
     height: 75vh;
     display: flex;
     flex-direction: row;
-    min-height: 500px; }
+    min-height: 500px;
+    margin: auto; }
   .form {
     text-align: center;
     display: flex;
@@ -140,15 +146,12 @@ input:-webkit-autofill {
     background-color: white;
     border-radius: 0px;
     outline: 0;
-    border-width: 0 0 1px;
+    border-width: 0 0 1px 0;
     border-color: black;
     margin: 0; }
-  .data-input:focus,
-  .data-input,
-  .data-input::placeholder {
-    color: black; }
-  .data-input:focus {
-    border-color: red; }
+    .data-input:focus, .data-input::placeholder {
+      color: black;
+      border-color: red; }
   .form > input {
     color: black;
     outline: none; }
@@ -161,13 +164,14 @@ input:-webkit-autofill {
     color: white;
     font-size: 10px;
     position: relative;
-    z-index: 2; }
+    z-index: 2;
+    border-color: currentColor; }
   .label-title {
     display: inline;
     text-align: left;
     width: 5rem;
     border-bottom: 1px solid black;
-    font-size: 1.2rem; }
+    font-size: 1.1rem; }
   .form {
     color: black; }
   .data-input {
@@ -190,15 +194,15 @@ input:-webkit-autofill {
     position: relative;
     text-align: center;
     width: 50%; }
-    .content .landing-image {
-      width: 100%;
-      height: 100%;
-      -webkit-border-top-left-radius: 10px;
-      -webkit-border-bottom-left-radius: 10px;
-      -moz-border-radius-topleft: 10px;
-      -moz-border-radius-bottomleft: 10px;
-      border-top-left-radius: 10px;
-      border-bottom-left-radius: 10px; }
+  .landing-image {
+    width: 100%;
+    height: 100%;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; }
   .content-text {
     text-align: left;
     height: fit-content;
@@ -206,14 +210,14 @@ input:-webkit-autofill {
     top: 30%;
     left: 35%;
     transform: translate(-50%, -50%); }
-    .content-text .content-h1 {
-      font-size: 5rem;
-      margin-top: 0px;
-      margin-bottom: 0px; }
-    .content-text .content-p {
-      font-size: 1rem;
-      position: relative;
-      top: -10px; }
+  .content-h1 {
+    font-size: 5rem;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+  .content-p {
+    font-size: 1rem;
+    position: relative;
+    top: -10px; }
   .landing-inputs {
     width: 50%;
     max-width: 50%;
@@ -258,21 +262,21 @@ input:-webkit-autofill {
     display: flex;
     justify-content: space-around;
     margin-top: 20px; }
-    .social-links .social-btn {
-      background-color: transparent;
-      border: 0px;
-      display: flex;
-      align-items: center;
-      border-radius: 30px;
-      width: 7vw;
-      color: white; }
-      .social-links .social-btn .text {
-        display: block;
-        width: 50%;
-        font-size: 9px; }
-    .social-links button:hover,
-    .social-links button:focus {
-      cursor: pointer; }
+  .social-btn {
+    background-color: transparent;
+    border: 0px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    width: 7vw;
+    color: white; }
+  .text {
+    display: block;
+    width: 50%;
+    font-size: 9px; }
+  button:hover,
+  button:focus {
+    cursor: pointer; }
   .social-btn {
     color: white; }
     .social-btn.fb {
@@ -281,8 +285,5 @@ input:-webkit-autofill {
       background-color: #1da1f2; }
     .social-btn.gp {
       background-color: #dd4b39; } }
-
-.data-input:focus, .data-input::placeholder {
-  color: black; }
 
 /*# sourceMappingURL=style.css.map */
