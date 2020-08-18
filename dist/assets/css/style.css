@@ -5,7 +5,8 @@ body {
 
 .header-text {
   text-align: left;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  margin-bottom: 10%; }
   .header-text .heading {
     font-size: 2rem; }
   .header-text .subtext {
@@ -22,7 +23,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around; }
+  justify-content: center; }
 
 .register-link {
   text-decoration: none; }
@@ -59,7 +60,8 @@ body {
   letter-spacing: 1px;
   padding: 5px;
   font-size: 1rem;
-  height: 44.4px; }
+  height: 44.4px;
+  color: red; }
 
 #terms {
   width: auto;
@@ -92,7 +94,7 @@ input:-webkit-autofill {
   height: 16px; }
 
 .social-container .divider {
-  margin-top: 20px;
+  margin-top: 15%;
   display: flex; }
   .social-container .divider hr {
     width: 40%; }
@@ -168,6 +170,7 @@ input:-webkit-autofill {
     width: 25%;
     height: 22px;
     background-color: red;
+    color: white;
     font-size: 10px;
     position: relative;
     z-index: 2; }
