@@ -20,10 +20,6 @@ button:focus {
     display: flex;
 }
 
-.whole-page {
-    display: block;
-}
-
 .header-text {
     letter-spacing: 2px;
     margin-bottom: 10%;
@@ -32,7 +28,7 @@ button:focus {
     }
     .subtext {
         margin-top: -1rem;
-        font-size: 0.8rem;
+        font-size: 0.875rem;
     }
 }
 
@@ -49,8 +45,8 @@ button:focus {
 }
 
 .landing-inputs {
-    margin: auto;
-    max-width: 60vw;
+    width: 100%;
+    padding: 5vw;
 }
 
 .form {
@@ -64,8 +60,9 @@ button:focus {
 
 .data-input {
     width: 100%;
-    //padding: 5px;
-    height: $inputSize;
+    padding: 0.5rem 0.85rem;
+    height: 2rem;
+    font-size: 1rem;
     margin: 5px;
     border-radius: 50px;
     border-color: white;
@@ -173,10 +170,10 @@ input:-webkit-autofill {
     .heading {
         font-size: 2rem;
     }
-    .subtext {
-        font-size: 1vw;
-        width: 60%;
-    }
+    //.subtext {
+    //    font-size: 1vw;
+    //    width: 60%;
+    //}
     .whole-page {
         display: flex;
         justify-content: center;
@@ -229,6 +226,9 @@ input:-webkit-autofill {
         z-index: 2;
         border-color: currentColor;
         margin: 40px 0;
+        &:hover {
+            box-shadow: gray;
+        }
     }
     .label-title {
         display: inline;
@@ -314,10 +314,10 @@ input:-webkit-autofill {
         .heading {
             font-size: 2rem;
         }
-        .subtext {
-            font-size: 15px;
-            width: 60%;
-        }
+        //.subtext {
+        //    font-size: 15px;
+        //    width: 60%;
+        //}
     }
     .terms-container {
         color: black;
@@ -352,13 +352,13 @@ input:-webkit-autofill {
     }
     .social-btn {
         color: white;
-        &.fb {
+        &._fb {
             background-color: #4267b2;
         }
-        &.tw {
+        &._tw {
             background-color: #1da1f2;
         }
-        &.gp {
+        &._gp {
             background-color: #dd4b39;
         }
     }
