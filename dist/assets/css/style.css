@@ -163,7 +163,7 @@ input:-webkit-autofill {
     border-color: currentColor;
     margin: 1vh 0; }
     .login-btn:hover {
-      box-shadow: gray; }
+      box-shadow: -3px 9px 49px -6px rgba(0, 0, 0, 0.75); }
   .label-title {
     display: inline;
     text-align: left;

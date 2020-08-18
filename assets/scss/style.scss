@@ -170,10 +170,7 @@ input:-webkit-autofill {
   .heading {
     font-size: 2rem;
   }
-  //.subtext {
-  //    font-size: 1vw;
-  //    width: 60%;
-  //}
+
   .whole-page {
     display: flex;
     justify-content: center;
@@ -234,7 +231,7 @@ input:-webkit-autofill {
     border-color: currentColor;
     margin: 1vh 0;
     &:hover {
-      box-shadow: gray;
+      box-shadow: -3px 9px 49px -6px rgba(0, 0, 0, 0.75);
     }
   }
   .label-title {
