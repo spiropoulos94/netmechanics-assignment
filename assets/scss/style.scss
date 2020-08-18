@@ -215,6 +215,9 @@ input:-webkit-autofill {
     .data-input::placeholder {
         color: black;
     }
+    .data-input:focus {
+        border-color: red;
+    }
     .form>input {
         color: black;
         outline: none;
