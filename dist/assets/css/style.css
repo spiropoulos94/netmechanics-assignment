@@ -19,21 +19,12 @@ body {
   .content .landing-image {
     width: 100%; }
 
-.landing-inputs {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
 .register-link {
   text-decoration: none; }
 
 .main-container {
-  width: 65%;
   margin: auto;
-  max-width: 500px;
-  max-height: 100%;
-  display: flex; }
+  max-width: 60vw; }
 
 .form {
   text-align: center; }
@@ -295,5 +286,8 @@ input:-webkit-autofill {
       background-color: #1da1f2; }
     .social-btn.gp {
       background-color: #dd4b39; } }
+
+.data-input:focus, .data-input::placeholder {
+  color: black; }
 
 /*# sourceMappingURL=style.css.map */
