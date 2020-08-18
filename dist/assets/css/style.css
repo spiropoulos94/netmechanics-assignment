@@ -4,8 +4,10 @@ body {
   color: white;
   font-family: 'Roboto', sans-serif; }
 
+.flex-element {
+  display: flex; }
+
 .header-text {
-  text-align: left;
   letter-spacing: 2px;
   margin-bottom: 10%; }
   .header-text .heading {
