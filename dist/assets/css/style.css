@@ -159,9 +159,6 @@ input:-webkit-autofill {
   .data-input,
   .data-input::placeholder {
     color: black; }
-  .data-input:focus,
-  .data-input:active {
-    border-color: red; }
   .form > input {
     color: black;
     outline: none; }
@@ -171,7 +168,6 @@ input:-webkit-autofill {
     width: 25%;
     height: 22px;
     background-color: red;
-    color: white;
     font-size: 10px;
     position: relative;
     z-index: 2; }
