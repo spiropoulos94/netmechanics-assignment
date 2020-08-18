@@ -5,105 +5,104 @@ $pageColor: firebrick;
 $inputSize: 3rem;
 $inputSizeDESKTOP: 1.5rem;
 body {
-    background-color: $pageColor;
-    margin: 0px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+  background-color: $pageColor;
+  margin: 0px;
+  color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 button:hover,
 button:focus {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .flex-element {
-    display: flex;
+  display: flex;
 }
 
 .header-text {
-    letter-spacing: 2px;
-    margin-bottom: 10%;
-    .heading {
-        font-size: 2rem;
-    }
-    .subtext {
-        margin-top: -1rem;
-        font-size: 0.875rem;
-    }
+  letter-spacing: 2px;
+  margin-bottom: 10%;
+  .heading {
+    font-size: 2rem;
+  }
+  .subtext {
+    margin-top: -1rem;
+    font-size: 0.875rem;
+  }
 }
 
 .content {
-    display: none;
-    min-width: 50%;
-    .landing-image {
-        width: 100%;
-    }
+  display: none;
+  min-width: 50%;
+  .landing-image {
+    width: 100%;
+  }
 }
 
 .register-link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .landing-inputs {
-    width: 100%;
-    padding: 4% 6%;
+  width: 100%;
+  padding: 4% 6%;
 }
 
 .form {
-    text-align: center;
-    //width: 100%;
+  text-align: center;
+  //width: 100%;
 }
 
 .label-title {
-    display: none;
+  display: none;
 }
 
 .data-input {
-    width: 100%;
-    padding: 0.5rem 0.85rem;
-    height: 2rem;
-    font-size: 1rem;
-    margin: 5px;
-    border-radius: 50px;
-    border-color: white;
-    background-color: $pageColor;
+  width: 100%;
+  padding: 0.5rem 0.85rem;
+  height: 2rem;
+  font-size: 1rem;
+  margin: 5px;
+  border-radius: 50px;
+  border-color: white;
+  background-color: $pageColor;
 }
 
 .login-btn {
-    width: 100%;
-    border-radius: 50px;
-    color: red;
-    background-color: white;
-    font-weight: bold;
-    letter-spacing: 1px;
-    padding: 5px;
-    font-size: 1rem;
-    height: 44.4px;
-    color: red;
-    border-color: currentColor;
+  width: 100%;
+  border-radius: 50px;
+  color: red;
+  background-color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 5px;
+  font-size: 1rem;
+  height: 44.4px;
+  color: red;
+  border-color: currentColor;
 }
 
 #terms {
-    width: auto;
-    height: auto;
+  width: auto;
+  height: auto;
 }
 
 .terms-container {
-    color: white;
-    font-size: 10px;
-    position: relative;
-    left: 2px;
-    top: 0.5rem;
+  color: white;
+  font-size: 10px;
+  position: relative;
+  left: 2px;
+  top: 0.5rem;
 }
 
 .data-input {
-    &,
-    &:focus,
-    &::placeholder {
-        color: white;
-    }
+  &,
+  &:focus,
+  &::placeholder {
+    color: white;
+  }
 }
-
 
 /* Changing AutoFill Background Color and Text Color */
 
@@ -111,254 +110,261 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-    box-shadow: 0 0 0 30px firebrick inset;
-    //color: white;
+  box-shadow: 0 0 0 30px firebrick inset;
+  //color: white;
 }
 
 input:-webkit-autofill {
-    -webkit-text-fill-color: white;
+  -webkit-text-fill-color: white;
 }
 
 .footer {
-    .icon {
-        width: 16px;
-        height: 16px;
-    }
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .divider {
-    margin-top: 15%;
-    hr {
-        width: 40%;
-    }
+  margin-top: 15%;
+  hr {
+    width: 40%;
+  }
 }
 
 .social-links {
-    justify-content: space-around;
-    padding-top: 10px;
-    .icon {
-        width: 30px;
-    }
+  justify-content: space-around;
+  padding-top: 10px;
+  .icon {
+    width: 30px;
+  }
 }
 
 .social-btn {
-    background-color: transparent;
-    border: 0px;
-    .text {
-        display: none;
-    }
+  background-color: transparent;
+  border: 0px;
+  .text {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 991px) {
-    .login-social-msg {
-        display: none;
-    }
+  .login-social-msg {
+    display: none;
+  }
 }
-
+//test comment
 @media only screen and (min-width: 992px) {
-    body {
-        background-color: white;
+  body {
+    background-color: white;
+  }
+  input {
+    // this is targeting only this forms inputs.
+    color: black;
+    outline: none;
+  }
+  .input-group {
+    margin: 14px 0px;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  //.subtext {
+  //    font-size: 1vw;
+  //    width: 60%;
+  //}
+  .whole-page {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(
+      to right bottom,
+      #f2c42f,
+      #ffa034,
+      #ff7b49,
+      #ff5861,
+      #ea3c7b
+    );
+  }
+  .register-link {
+    color: blue;
+  }
+  .main-container {
+    width: 75vw;
+    max-width: none;
+    height: 75vh;
+    //display: flex;
+    flex-direction: row;
+    min-height: 500px;
+    margin: auto;
+  }
+  .form {
+    text-align: center;
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: center;
+  }
+  .data-input {
+    font-size: 1.1rem;
+    height: $inputSizeDESKTOP;
+    background-color: white;
+    border-radius: 0px;
+    outline: 0;
+    border-width: 0 0 1px 0;
+    border-color: black;
+    margin: 0;
+    color: black;
+    &:focus,
+    &::placeholder {
+      color: black;
+      border-color: red;
     }
-    input {
-        // this is targeting only this forms inputs.
-        color: black;
-        outline: none;
+  }
+  .login-btn {
+    display: block;
+    text-align: center;
+    width: 160px;
+    height: 35px;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    position: relative;
+    z-index: 2;
+    border-color: currentColor;
+    margin: 40px 0;
+    &:hover {
+      box-shadow: gray;
     }
-    .input-group {
-        margin: 14px 0px;
+  }
+  .label-title {
+    display: inline;
+    text-align: left;
+    width: 5rem;
+    border-bottom: 1px solid currentColor;
+    font-size: 1.1rem;
+  }
+  .form {
+    color: black;
+  }
+  .login-container {
+    justify-content: flex-end;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+    color: white;
+  }
+  .form {
+    input::placeholder {
+      color: transparent;
     }
+  }
+  input:-webkit-autofill {
+    -webkit-text-fill-color: black !important;
+  }
+  .content {
+    display: block;
+    position: relative;
+    text-align: center;
+    //color: white;
+    width: 50%;
+  }
+  .landing-image {
+    width: 100%;
+    height: 100%;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .content-text {
+    text-align: left;
+    height: fit-content;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+  }
+  .content-h1 {
+    font-size: 5rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .content-p {
+    font-size: 1rem;
+    position: relative;
+    top: -10px;
+  }
+  .landing-inputs {
+    //TODO set padding, remove width and margin from children
+    width: 50%;
+    max-width: 50%;
+    background-color: white;
+    max-height: 100%;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .header-text {
+    color: black !important; // I used !important here because this header continues to inherit the white colour from the mobile design.
+    letter-spacing: 2px;
+    display: block;
     .heading {
-        font-size: 2rem;
+      font-size: 2rem;
     }
     //.subtext {
-    //    font-size: 1vw;
+    //    font-size: 15px;
     //    width: 60%;
     //}
-    .whole-page {
-        display: flex;
-        justify-content: center;
-        height: 100vh;
-        background-image: linear-gradient( to right bottom, #f2c42f, #ffa034, #ff7b49, #ff5861, #ea3c7b);
+  }
+  .terms-container {
+    color: black;
+    font-size: 14px;
+    justify-content: flex-end;
+    .terms-input {
+      margin-right: 3%;
     }
-    .register-link {
-        color: blue;
+  }
+  .divider {
+    display: none;
+  }
+  .msg-icons {
+    text-align: left;
+  }
+  .social-links {
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .social-btn {
+    background-color: transparent;
+    border: 0px;
+    align-items: center;
+    border-radius: 30px;
+    width: 7vw;
+    color: white;
+    .text {
+      // if i put it outside the .social-btn class it's styles are overwritten
+      display: block;
+      font-size: 10px;
     }
-    .main-container {
-        width: 75vw;
-        max-width: none;
-        height: 75vh;
-        //display: flex;
-        flex-direction: row;
-        min-height: 500px;
-        margin: auto;
+  }
+  .social-btn {
+    color: white;
+    &._fb {
+      background-color: #4267b2;
     }
-    .form {
-        text-align: center;
-        //display: flex;
-        //flex-direction: column;
-        //justify-content: center;
+    &._tw {
+      background-color: #1da1f2;
     }
-    .data-input {
-        font-size: 1.1rem;
-        height: $inputSizeDESKTOP;
-        background-color: white;
-        border-radius: 0px;
-        outline: 0;
-        border-width: 0 0 1px 0;
-        border-color: black;
-        margin: 0;
-        color: black;
-        &:focus,
-        &::placeholder {
-            color: black;
-            border-color: red;
-        }
+    &._gp {
+      background-color: #dd4b39;
     }
-    .login-btn {
-        display: block;
-        text-align: center;
-        width: 160px;
-        height: 35px;
-        background-color: red;
-        color: white;
-        font-size: 14px;
-        position: relative;
-        z-index: 2;
-        border-color: currentColor;
-        margin: 40px 0;
-        &:hover {
-            box-shadow: gray;
-        }
-    }
-    .label-title {
-        display: inline;
-        text-align: left;
-        width: 5rem;
-        border-bottom: 1px solid currentColor;
-        font-size: 1.1rem;
-    }
-    .form {
-        color: black;
-    }
-    .login-container {
-        justify-content: flex-end;
-    }
-    input:-webkit-autofill,
-    input:-webkit-autofill:hover,
-    input:-webkit-autofill:focus,
-    input:-webkit-autofill:active {
-        -webkit-box-shadow: 0 0 0 30px white inset;
-        color: white
-    }
-    .form {
-        input::placeholder {
-            color: transparent;
-        }
-    }
-    input:-webkit-autofill {
-        -webkit-text-fill-color: black !important;
-    }
-    .content {
-        display: block;
-        position: relative;
-        text-align: center;
-        //color: white;
-        width: 50%;
-    }
-    .landing-image {
-        width: 100%;
-        height: 100%;
-        -webkit-border-top-left-radius: 10px;
-        -webkit-border-bottom-left-radius: 10px;
-        -moz-border-radius-topleft: 10px;
-        -moz-border-radius-bottomleft: 10px;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-    }
-    .content-text {
-        text-align: left;
-        height: fit-content;
-        position: absolute;
-        top: 30%;
-        left: 35%;
-        transform: translate(-50%, -50%);
-    }
-    .content-h1 {
-        font-size: 5rem;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    .content-p {
-        font-size: 1rem;
-        position: relative;
-        top: -10px;
-    }
-    .landing-inputs {
-        //TODO set padding, remove width and margin from children
-        width: 50%;
-        max-width: 50%;
-        background-color: white;
-        max-height: 100%;
-        -webkit-border-top-right-radius: 10px;
-        -webkit-border-bottom-right-radius: 10px;
-        -moz-border-radius-topright: 10px;
-        -moz-border-radius-bottomright: 10px;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-    .header-text {
-        color: black !important; // I used !important here because this header continues to inherit the white colour from the mobile design.
-        letter-spacing: 2px;
-        display: block;
-        .heading {
-            font-size: 2rem;
-        }
-        //.subtext {
-        //    font-size: 15px;
-        //    width: 60%;
-        //}
-    }
-    .terms-container {
-        color: black;
-        font-size: 14px;
-        justify-content: flex-end;
-        .terms-input {
-            margin-right: 3%;
-        }
-    }
-    .divider {
-        display: none;
-    }
-    .msg-icons {
-        text-align: left;
-    }
-    .social-links {
-        justify-content: space-around;
-        margin-top: 20px;
-    }
-    .social-btn {
-        background-color: transparent;
-        border: 0px;
-        align-items: center;
-        border-radius: 30px;
-        width: 7vw;
-        color: white;
-        .text {
-            // if i put it outside the .social-btn class it's styles are overwritten
-            display: block;
-            font-size: 10px;
-        }
-    }
-    .social-btn {
-        color: white;
-        &._fb {
-            background-color: #4267b2;
-        }
-        &._tw {
-            background-color: #1da1f2;
-        }
-        &._gp {
-            background-color: #dd4b39;
-        }
-    }
+  }
 }
