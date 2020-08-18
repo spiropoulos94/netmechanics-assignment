@@ -85,14 +85,12 @@ input:-webkit-autofill {
   width: 16px;
   height: 16px; }
 
-.social-container .divider {
-  margin-top: 15%;
-  display: flex; }
-  .social-container .divider hr {
+.divider {
+  margin-top: 15%; }
+  .divider hr {
     width: 40%; }
 
 .social-links {
-  display: flex;
   justify-content: space-around;
   padding-top: 10px; }
   .social-links .icon {
@@ -115,7 +113,6 @@ button:focus {
   body {
     background-color: white; }
   .input-group {
-    display: flex;
     margin: 14px 0px; }
   .heading {
     font-size: 2rem; }
@@ -140,7 +137,8 @@ button:focus {
   .form {
     text-align: center;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: center; }
   .data-input {
     height: 1.1rem;
     font-size: 1.1rem;
@@ -178,7 +176,6 @@ button:focus {
   .data-input {
     color: black; }
   .login-container {
-    display: flex;
     justify-content: flex-end; }
   input:-webkit-autofill,
   input:-webkit-autofill:hover,
@@ -243,9 +240,7 @@ button:focus {
   .terms-container {
     color: black;
     font-size: 14px;
-    display: flex;
-    justify-content: start;
-    position: relative; }
+    justify-content: flex-end; }
     .terms-container .terms-input {
       margin-right: 3%; }
   .social-container .divider {
@@ -257,16 +252,13 @@ button:focus {
     .msg-icons span {
       position: relative; }
   .login-social-msg {
-    display: flex;
     z-index: 1; }
   .social-links {
-    display: flex;
     justify-content: space-around;
     margin-top: 20px; }
   .social-btn {
     background-color: transparent;
     border: 0px;
-    display: flex;
     align-items: center;
     border-radius: 30px;
     width: 7vw;

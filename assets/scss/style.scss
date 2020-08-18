@@ -123,16 +123,16 @@ input:-webkit-autofill {
     }
 }
 
-.social-container .divider {
+.divider {
     margin-top: 15%;
-    display: flex;
+    // display: flex;
     hr {
         width: 40%;
     }
 }
 
 .social-links {
-    display: flex;
+    //display: flex;
     justify-content: space-around;
     padding-top: 10px;
     .icon {
@@ -162,7 +162,7 @@ button:focus {
         background-color: white;
     }
     .input-group {
-        display: flex;
+        //display: flex;
         margin: 14px 0px;
     }
     .heading {
@@ -194,6 +194,7 @@ button:focus {
         text-align: center;
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
     //edw ola mazi
     .data-input {
@@ -242,7 +243,7 @@ button:focus {
         color: black;
     }
     .login-container {
-        display: flex;
+        //display: flex;
         justify-content: flex-end;
     }
     input:-webkit-autofill,
@@ -324,9 +325,8 @@ button:focus {
     .terms-container {
         color: black;
         font-size: 14px;
-        display: flex;
-        justify-content: start;
-        position: relative;
+        //display: flex;
+        justify-content: flex-end;
         .terms-input {
             margin-right: 3%;
         }
@@ -343,18 +343,18 @@ button:focus {
         }
     }
     .login-social-msg {
-        display: flex;
+        //display: flex;
         z-index: 1;
     }
     .social-links {
-        display: flex;
+        // display: flex;
         justify-content: space-around;
         margin-top: 20px;
     }
     .social-btn {
         background-color: transparent;
         border: 0px;
-        display: flex;
+        //display: flex;
         align-items: center;
         border-radius: 30px;
         width: 7vw;
