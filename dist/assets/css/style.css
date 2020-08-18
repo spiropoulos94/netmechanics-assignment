@@ -41,7 +41,6 @@ button:focus {
 
 .data-input {
   width: 100%;
-  padding: 0.5rem 0.85rem;
   height: 2rem;
   font-size: 1rem;
   margin: 5px;
@@ -118,7 +117,8 @@ input:-webkit-autofill {
     color: black;
     outline: none; }
   .input-group {
-    margin: 1vh 0px; }
+    margin: 1vh 0px;
+    padding: 0.5rem 0.85rem; }
   .heading {
     font-size: 2rem; }
   .whole-page {
@@ -240,7 +240,7 @@ input:-webkit-autofill {
     text-align: left; }
   .social-links {
     justify-content: space-around;
-    margin-top: 20px; }
+    margin-top: 10px; }
   .social-btn {
     background-color: transparent;
     border: 0px;
