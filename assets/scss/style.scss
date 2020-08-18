@@ -46,7 +46,7 @@ button:focus {
 
 .landing-inputs {
     width: 100%;
-    padding: 5vw;
+    padding: 4% 6%;
 }
 
 .form {
@@ -298,14 +298,13 @@ input:-webkit-autofill {
         width: 50%;
         max-width: 50%;
         background-color: white;
-        height: 100%;
+        max-height: 100%;
         -webkit-border-top-right-radius: 10px;
         -webkit-border-bottom-right-radius: 10px;
         -moz-border-radius-topright: 10px;
         -moz-border-radius-bottomright: 10px;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
-        padding: 0 6%;
     }
     .header-text {
         color: black !important; // I used !important here because this header continues to inherit the white colour from the mobile design.
