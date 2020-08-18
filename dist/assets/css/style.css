@@ -99,8 +99,8 @@ input:-webkit-autofill {
 .login-social-msg {
   display: none; }
 
-.login-btn:hover,
-.login-btn:focus {
+button:hover,
+button:focus {
   cursor: pointer; }
 
 .social-btn {
@@ -140,8 +140,8 @@ input:-webkit-autofill {
     display: flex;
     flex-direction: column; }
   .data-input {
-    height: 12px;
-    font-size: 1rem;
+    height: 1.1rem;
+    font-size: 1.1rem;
     background-color: white;
     border-radius: 0px;
     outline: 0;
