@@ -173,8 +173,6 @@ button:focus {
     font-size: 1.1rem; }
   .form {
     color: black; }
-  .data-input {
-    color: black; }
   .login-container {
     justify-content: flex-end; }
   input:-webkit-autofill,
@@ -243,14 +241,12 @@ button:focus {
     justify-content: flex-end; }
     .terms-container .terms-input {
       margin-right: 3%; }
-  .social-container .divider {
+  .divider {
     display: none; }
   .msg-icons {
     text-align: left;
     display: flex;
     flex-direction: column; }
-    .msg-icons span {
-      position: relative; }
   .login-social-msg {
     z-index: 1; }
   .social-links {

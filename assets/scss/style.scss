@@ -236,9 +236,6 @@ button:focus {
     .form {
         color: black;
     }
-    .data-input {
-        color: black;
-    }
     .login-container {
         justify-content: flex-end;
     }
@@ -326,16 +323,13 @@ button:focus {
             margin-right: 3%;
         }
     }
-    .social-container .divider {
+    .divider {
         display: none;
     }
     .msg-icons {
         text-align: left;
         display: flex;
         flex-direction: column;
-        span {
-            position: relative;
-        }
     }
     .login-social-msg {
         z-index: 1;
