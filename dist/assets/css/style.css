@@ -21,7 +21,6 @@ button:focus {
     font-size: 0.875rem; }
 
 .content {
-  display: none;
   min-width: 50%; }
   .content .landing-image {
     width: 100%; }
@@ -33,9 +32,6 @@ button:focus {
   width: 100%;
   padding: 4% 6%;
   display: block; }
-
-.form {
-  text-align: center; }
 
 .label-title {
   display: none; }
@@ -109,7 +105,8 @@ input:-webkit-autofill {
     display: none; }
 
 @media only screen and (max-width: 991px) {
-  .login-social-msg {
+  .login-social-msg,
+  .content {
     display: none; } }
 
 @media only screen and (min-width: 992px) {
@@ -136,8 +133,6 @@ input:-webkit-autofill {
     height: 85vh;
     min-height: 550px;
     margin: auto; }
-  .form {
-    text-align: center; }
   .data-input {
     font-size: 1.1rem;
     height: 1.5rem;
@@ -152,19 +147,16 @@ input:-webkit-autofill {
       color: black;
       border-color: red; }
   .login-btn {
-    display: block;
     text-align: center;
     width: 160px;
     height: 35px;
     background-color: red;
     color: white;
     font-size: 14px;
-    position: relative;
-    z-index: 2;
     border-color: currentColor;
     margin: 1vh 0;
     border: 1px solid red; }
-    .login-btn:hover {
+    .login-btn:hover, .login-btn:focus {
       box-shadow: -3px 9px 19px -3px rgba(0, 0, 0, 0.75); }
   .label-title {
     display: inline;
@@ -174,16 +166,16 @@ input:-webkit-autofill {
     font-size: 1.1rem; }
   .form {
     color: black; }
+    .form input::placeholder {
+      color: transparent; }
   .login-container {
     justify-content: flex-end; }
   input:-webkit-autofill,
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus,
   input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px white inset;
+    box-shadow: 0 0 0 30px white inset;
     color: white; }
-  .form input::placeholder {
-    color: transparent; }
   input:-webkit-autofill {
     -webkit-text-fill-color: black !important; }
   .content {
@@ -221,19 +213,21 @@ input:-webkit-autofill {
     flex-direction: column;
     justify-content: space-around; }
   .header-text {
-    color: black !important;
-    letter-spacing: 2px;
-    display: block; }
+    color: black;
+    letter-spacing: 2px; }
     .header-text .heading {
       font-size: 2rem; }
   .terms-container {
     color: black;
     font-size: 14px;
-    justify-content: flex-end; }
-    .terms-container .terms-input {
-      margin-right: 3%; }
+    display: flex;
+    justify-content: center; }
+  .terms-input {
+    margin-right: 3%; }
   .divider {
     display: none; }
+  .login-social-msg {
+    color: black; }
   .msg-icons {
     text-align: left; }
   .social-links {
@@ -247,7 +241,7 @@ input:-webkit-autofill {
     width: 7vw;
     color: white; }
     .social-btn .text {
-      display: block;
+      display: inline;
       font-size: 10px; }
   .social-btn {
     color: white; }
