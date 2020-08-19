@@ -30,8 +30,7 @@ button:focus {
 
 .landing-inputs {
   width: 100%;
-  padding: 4% 6%;
-  display: block; }
+  padding: 4% 6%; }
 
 .label-title {
   display: none; }
@@ -179,7 +178,6 @@ input:-webkit-autofill {
   input:-webkit-autofill {
     -webkit-text-fill-color: black !important; }
   .content {
-    display: block;
     position: relative;
     text-align: center;
     width: 50%;
