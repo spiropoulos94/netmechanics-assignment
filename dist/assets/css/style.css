@@ -165,8 +165,6 @@ input:-webkit-autofill {
     font-size: 1.1rem; }
   .form {
     color: black; }
-    .form input::placeholder {
-      color: transparent; }
   .login-container {
     justify-content: flex-end; }
   input:-webkit-autofill,
